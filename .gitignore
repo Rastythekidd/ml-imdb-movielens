@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/raw/
+data/original/*.xlsx
+data/original/*.csv
+data/derived/
+data/reconstructed/
+results/movie_statistics.csv
+*.zip
+
+_robocze/

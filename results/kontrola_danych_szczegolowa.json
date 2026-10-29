@@ -1,0 +1,37 @@
+{
+  "kontrola": {
+    "IMDb_recenzje.xlsx": {
+      "wiersze": 200,
+      "kolumny": 5,
+      "braki": 0,
+      "duplikaty": 0,
+      "formuly": 0,
+      "zgodny_hash": true
+    },
+    "MovieLens_filmy.xlsx": {
+      "wiersze": 200,
+      "kolumny": 6,
+      "braki": 0,
+      "duplikaty": 0,
+      "formuly": 0,
+      "zgodny_hash": true
+    },
+    "MovieLens_liczby.xlsx": {
+      "wiersze": 200,
+      "kolumny": 5,
+      "braki": 0,
+      "duplikaty": 0,
+      "formuly": 0,
+      "zgodny_hash": true
+    }
+  },
+  "liczba_problemow_danych": 0,
+  "problemy": [],
+  "zweryfikowane_metadane": 189,
+  "srednia_ocena": 3.42,
+  "mediana_oceny": 3.0,
+  "klasy_imdb": {
+    "pozytywny": 100,
+    "negatywny": 100
+  }
+}

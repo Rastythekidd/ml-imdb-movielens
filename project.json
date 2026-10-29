@@ -1,0 +1,36 @@
+{
+  "title": "Analiza opinii o tytułach IMDb i ocen filmów MovieLens",
+  "course": "Uczenie maszynowe",
+  "stage": "Etap 1: dane, analiza eksploracyjna i pytania badawcze",
+  "date": "27.10.2026",
+  "repository_url": "https://github.com/Rastythekidd/ml-imdb-movielens",
+  "team": [
+    {
+      "name": "Andrei Rastsiahayeu",
+      "id": "71629",
+      "role": "Koordynacja, dokumentacja źródeł, kompletność raportu"
+    },
+    {
+      "name": "Vadym Karkhut",
+      "id": "71513",
+      "role": "Dane MovieLens, statystyki opisowe i wykresy ocen"
+    },
+    {
+      "name": "Yulia Khrystonko",
+      "id": "72072",
+      "role": "Dane IMDb, przygotowanie tekstu i analiza długości"
+    },
+    {
+      "name": "Kateryna Ivanchenko",
+      "id": "72646",
+      "role": "Pytania badawcze, interpretacja i plan metod"
+    },
+    {
+      "name": "Alisa Kosenkova",
+      "id": "71510",
+      "role": "Reprodukowalność, kontrola wyników i przygotowanie repozytorium"
+    }
+  ],
+  "github_profile_url": "https://github.com/Rastythekidd",
+  "report_file": "Raport_etap_1_z_linkiem.pdf"
+}

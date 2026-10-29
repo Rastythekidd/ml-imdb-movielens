@@ -1,0 +1,2420 @@
+{
+  "data_sprawdzenia": "2026-10-27",
+  "podsumowanie": {
+    "dostepny": 10,
+    "niepotwierdzony": 8,
+    "blokada_automatycznej_weryfikacji": 380,
+    "brak_strony": 1
+  },
+  "szablony": [
+    {
+      "url": "https://github.com/OWNER/REPO",
+      "status": "szablon_lub_fragment",
+      "miejsca": [
+        "Analiza_etap_1.ipynb",
+        "README.md",
+        "Raport_etap_1.pdf:strona9",
+        "START_RU.md",
+        "src\\make_report.py"
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/",
+      "status": "szablon_lub_fragment",
+      "miejsca": [
+        "src\\analysis.py",
+        "src\\reproduce_subset.py"
+      ]
+    }
+  ],
+  "uwagi": [
+    "HTTP 202/403 nie oznacza, że tytuł IMDb nie istnieje. Serwis blokuje automatyczny dostęp.",
+    "Niedostępny adres Cinemablend znajduje się w autentycznej recenzji, komórka B91. Tekstu źródłowego nie zmieniono.",
+    "Profil GitHub użytkownika nie jest linkiem do repozytorium projektu."
+  ],
+  "wyniki": [
+    {
+      "url": "https://aclanthology.org/P11-1015/",
+      "kod_http": 206,
+      "adres_koncowy": "https://aclanthology.org/P11-1015/",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://ai.stanford.edu/~amaas/data/sentiment/",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://huggingface.co/datasets/stanfordnlp/imdb",
+      "kod_http": 200,
+      "adres_koncowy": "https://huggingface.co/datasets/stanfordnlp/imdb",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://developer.imdb.com/non-commercial-datasets/",
+      "kod_http": 206,
+      "adres_koncowy": "https://data.imdb.com/non-commercial-datasets/",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://doi.org/10.1145/2827872",
+      "kod_http": 403,
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://grouplens.org/datasets/movielens/100k/",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "http://www.aclweb.org/anthology/P11-1015",
+      "kod_http": 206,
+      "adres_koncowy": "https://aclanthology.org/P11-1015/",
+      "status": "dostepny"
+    },
+    {
+      "url": "http://dx.doi.org/10.1145/2827872",
+      "kod_http": 403,
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.grouplens.org/",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "http://www.movielens.org/",
+      "kod_http": 206,
+      "adres_koncowy": "https://movielens.org/",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate rejected (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://datasets.imdbws.com/title.basics.tsv.gz",
+      "kod_http": 206,
+      "adres_koncowy": "https://datasets.imdbws.com/title.basics.tsv.gz",
+      "status": "dostepny"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0120623/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0120623/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0134154/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0134154/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0065911/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0065911/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0974959/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0974959/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0115907/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0115907/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0065208/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0065208/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0304711/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0304711/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0066449/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066449/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0092112/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092112/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0485909/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0485909/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0033152/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0033152/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0100419/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0100419/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0305396/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0305396/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0061834/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0061834/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0042752/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0042752/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0090060/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0090060/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0092425/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092425/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0455507/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0455507/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0459387/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0459387/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0486655/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0486655/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0386741/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0386741/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0105428/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0105428/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0315323/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0315323/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0114419/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114419/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0091188/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0091188/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0332452/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0332452/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0042332/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0042332/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0209809/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0209809/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0126604/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0126604/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0353161/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0353161/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0116477/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116477/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0086250/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0086250/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0089308/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0089308/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0326901/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0326901/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0430650/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0430650/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0162128/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0162128/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0398842/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0398842/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0082279/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082279/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0169863/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0169863/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0437182/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0437182/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0390614/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0390614/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0448075/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0448075/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0255798/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0255798/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0273896/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0273896/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0082031/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082031/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0086383/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0086383/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0117894/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0117894/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0254325/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0254325/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0123385/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0123385/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0485601/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0485601/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0257106/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0257106/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0037514/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0037514/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0093978/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0093978/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0021435/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0021435/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0347779/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0347779/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0230011/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0230011/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0100056/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0100056/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0366629/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0366629/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0708433/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0708433/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0118958/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0118958/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0399877/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0399877/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0080520/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0080520/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0422783/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0422783/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0477337/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0477337/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0443632/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0443632/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0037382/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0037382/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0098155/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0098155/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0197116/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0197116/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0199650/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0199650/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0213790/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0213790/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0408154/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0408154/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0090713/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0090713/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0093181/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0093181/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0473356/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0473356/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0189456/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0189456/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0375210/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0375210/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0101829/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0101829/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0040613/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0040613/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0087127/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0087127/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0102951/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0102951/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0388888/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0388888/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0807840/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0807840/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0084096/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0084096/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0097044/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0097044/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0369226/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0369226/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0144024/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0144024/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0430912/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0430912/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0445161/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0445161/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0114658/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114658/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0255730/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0255730/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0097714/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0097714/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0051406/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0051406/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0114746/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114746/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0063850/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0063850/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0790709/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0790709/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0228528/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0228528/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0926129/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0926129/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0446685/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0446685/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0094868/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0094868/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0116756/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116756/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0085037/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0085037/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0475101/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0475101/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0310001/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0310001/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0075781/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0075781/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0479948/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0479948/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0893509/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0893509/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0708787/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0708787/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0467491/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0467491/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0245095/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0245095/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0048140/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0048140/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0043137/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0043137/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0421239/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0421239/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0082661/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082661/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0088359/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0088359/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0081505/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0081505/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0284978/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0284978/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0113305/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0113305/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0047200/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0047200/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0052646/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0052646/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0156789/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0156789/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0179841/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0179841/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0098084/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0098084/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0292242/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0292242/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0107979/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0107979/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0074653/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0074653/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0347591/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0347591/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0196267/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0196267/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0374569/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0374569/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0471930/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0471930/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0831840/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0831840/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0103907/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0103907/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0094924/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0094924/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0105347/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0105347/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0166813/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0166813/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0346039/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0346039/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0119906/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0119906/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0092359/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092359/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0312640/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0312640/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0076276/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0076276/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0066817/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066817/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0171363/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0171363/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0120613/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0120613/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0433407/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0433407/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0046187/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0046187/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0096310/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0096310/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0479519/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0479519/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0290661/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0290661/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0104503/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0104503/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0019379/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0019379/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0472033/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0472033/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0116075/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116075/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0048295/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0048295/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0385002/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0385002/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0024130/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0024130/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0117179/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0117179/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0066390/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066390/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0095895/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0095895/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0499537/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0499537/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0040525/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0040525/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0045492/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0045492/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0099327/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0099327/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0188045/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0188045/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0166896/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0166896/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0043278/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0043278/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0417148/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0417148/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0111323/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0111323/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0124394/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0124394/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0264060/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0264060/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0070497/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0070497/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0257044/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0257044/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0073205/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0073205/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0104515/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0104515/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0019071/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0019071/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0382330/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0382330/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0083261/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0083261/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0081878/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0081878/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0300470/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0300470/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0000010/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0000010/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0164052/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0164052/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0159542/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0159542/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0268380/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0268380/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0888019/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0888019/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0175877/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0175877/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0264689/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0264689/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0328107/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0328107/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0486615/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0486615/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0127503/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0127503/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0450345/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0450345/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.imdb.com/title/tt0203408/usercomments",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0203408/reviews/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://github.com/",
+      "kod_http": 206,
+      "adres_koncowy": "https://github.com/",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0120623/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0120623/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0134154/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0134154/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0065911/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0065911/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0974959/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0974959/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0115907/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0115907/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0065208/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0065208/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0304711/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0304711/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0066449/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066449/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0092112/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092112/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0485909/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0485909/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0033152/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0033152/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0100419/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0100419/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0305396/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0305396/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0061834/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0061834/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0042752/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0042752/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0090060/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0090060/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0092425/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092425/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0455507/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0455507/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0459387/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0459387/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0486655/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0486655/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0386741/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0386741/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0105428/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0105428/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0315323/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0315323/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0114419/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114419/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0091188/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0091188/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0332452/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0332452/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0042332/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0042332/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0209809/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0209809/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0126604/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0126604/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0353161/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0353161/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0116477/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116477/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0086250/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0086250/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0089308/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0089308/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0326901/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0326901/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0430650/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0430650/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0162128/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0162128/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0398842/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0398842/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0082279/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082279/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0169863/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0169863/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0437182/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0437182/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0390614/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0390614/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0448075/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0448075/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0255798/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0255798/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0273896/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0273896/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0082031/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082031/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0086383/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0086383/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0117894/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0117894/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0254325/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0254325/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0123385/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0123385/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0485601/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0485601/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0257106/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0257106/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0037514/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0037514/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0093978/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0093978/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0021435/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0021435/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0347779/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0347779/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0230011/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0230011/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0100056/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0100056/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0366629/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0366629/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0708433/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0708433/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0118958/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0118958/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0399877/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0399877/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0080520/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0080520/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0422783/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0422783/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0477337/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0477337/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0443632/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0443632/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0037382/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0037382/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0098155/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0098155/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0197116/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0197116/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0199650/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0199650/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0213790/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0213790/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0408154/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0408154/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0090713/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0090713/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0093181/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0093181/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0473356/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0473356/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0189456/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0189456/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0375210/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0375210/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0101829/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0101829/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0040613/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0040613/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0087127/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0087127/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0102951/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0102951/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0388888/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0388888/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0807840/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0807840/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0084096/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0084096/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0097044/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0097044/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "http://www.cinemablend.com/feature.php?id=209",
+      "kod_http": 206,
+      "adres_koncowy": "https://www.cinemablend.com/",
+      "status": "dostepny"
+    },
+    {
+      "url": "http://www.cinemablend.com/forum/showthread.php?s=&threadid=21699",
+      "kod_http": 404,
+      "status": "brak_strony"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0369226/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0369226/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0144024/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0144024/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0430912/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0430912/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0445161/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0445161/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0114658/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114658/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0255730/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0255730/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0097714/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0097714/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0051406/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0051406/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0114746/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0114746/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0063850/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0063850/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0790709/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0790709/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0228528/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0228528/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0926129/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0926129/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0446685/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0446685/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0094868/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0094868/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0116756/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116756/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0085037/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0085037/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0475101/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0475101/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0310001/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0310001/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0075781/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0075781/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0479948/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0479948/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0893509/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0893509/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0708787/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0708787/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0467491/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0467491/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0245095/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0245095/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0048140/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0048140/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0043137/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0043137/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0421239/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0421239/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0082661/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0082661/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0088359/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0088359/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0081505/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0081505/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0284978/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0284978/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0113305/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0113305/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0047200/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0047200/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0052646/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0052646/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0156789/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0156789/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0179841/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0179841/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0098084/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0098084/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0292242/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0292242/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0107979/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0107979/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0074653/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0074653/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0347591/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0347591/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0196267/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0196267/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0374569/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0374569/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0471930/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0471930/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0831840/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0831840/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0103907/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0103907/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0094924/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0094924/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0105347/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0105347/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0166813/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0166813/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0346039/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0346039/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0119906/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0119906/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0092359/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0092359/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0312640/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0312640/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0076276/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0076276/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0066817/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066817/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0171363/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0171363/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0120613/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0120613/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0433407/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0433407/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0046187/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0046187/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0096310/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0096310/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0479519/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0479519/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0290661/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0290661/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0104503/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0104503/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0019379/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0019379/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0472033/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0472033/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0116075/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0116075/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0048295/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0048295/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0385002/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0385002/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0024130/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0024130/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0117179/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0117179/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0066390/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0066390/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0095895/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0095895/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0499537/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0499537/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0040525/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0040525/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0045492/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0045492/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0099327/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0099327/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0188045/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0188045/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0166896/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0166896/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0043278/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0043278/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0417148/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0417148/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0111323/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0111323/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0124394/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0124394/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0264060/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0264060/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0070497/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0070497/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0257044/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0257044/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0073205/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0073205/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0104515/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0104515/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0019071/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0019071/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0382330/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0382330/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0083261/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0083261/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0081878/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0081878/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0300470/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0300470/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0000010/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0000010/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0164052/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0164052/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0159542/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0159542/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0268380/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0268380/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0888019/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0888019/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0175877/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0175877/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0264689/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0264689/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0328107/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0328107/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0486615/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0486615/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0127503/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0127503/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0450345/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0450345/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0203408/",
+      "kod_http": 202,
+      "adres_koncowy": "https://www.imdb.com/title/tt0203408/",
+      "status": "blokada_automatycznej_weryfikacji"
+    },
+    {
+      "url": "https://github.com/Rastythekidd",
+      "kod_http": 206,
+      "adres_koncowy": "https://github.com/Rastythekidd",
+      "status": "dostepny"
+    },
+    {
+      "url": "https://nlp.stanford.edu/~amaas/data/sentiment/",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://nlp.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+      "status": "niepotwierdzony",
+      "blad": "<urlopen error timed out>"
+    },
+    {
+      "url": "https://data.imdb.com/non-commercial-datasets/",
+      "kod_http": 206,
+      "adres_koncowy": "https://data.imdb.com/non-commercial-datasets/",
+      "status": "dostepny"
+    }
+  ]
+}

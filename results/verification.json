@@ -1,0 +1,19 @@
+{
+  "data": "2026-10-27",
+  "dane_sprawdzone_z_archiwami": 400,
+  "metadane_imdb": 189,
+  "bledy_danych": 0,
+  "oryginalne_arkusze_niezmienione": true,
+  "sumy_archiwow": "zgodne",
+  "statystyki_niezalezna_kontrola": "zgodne",
+  "odtworzenie_bez_xlsx": "poprawne",
+  "wyniki_csv_i_xlsx": "identyczne",
+  "wykresy_po_odtworzeniu": "identyczne",
+  "raport_liczba_stron": 5,
+  "notebook_skladnia": "poprawna",
+  "walidacja_linku_repozytorium": "poprawna",
+  "zmiany_na_github": false,
+  "adres_repozytorium_w_pdf": "https://github.com/Rastythekidd/ml-imdb-movielens",
+  "hiperlacze_repozytorium_w_pdf": true,
+  "aktualny_raport": "Raport_etap_1_z_linkiem.pdf"
+}

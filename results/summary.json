@@ -1,0 +1,459 @@
+{
+  "analysis_date": "2026-10-27",
+  "quality": {
+    "IMDb_recenzje.xlsx": {
+      "rows": 200,
+      "columns": 5,
+      "missing_by_column": {
+        "tytul_filmu": 0,
+        "tekst_recenzji": 0,
+        "sentyment": 0,
+        "id_imdb": 0,
+        "link_imdb": 0
+      },
+      "duplicate_full_rows": 0,
+      "python_types": {
+        "tytul_filmu": [
+          "str"
+        ],
+        "tekst_recenzji": [
+          "str"
+        ],
+        "sentyment": [
+          "str"
+        ],
+        "id_imdb": [
+          "str"
+        ],
+        "link_imdb": [
+          "str"
+        ]
+      }
+    },
+    "MovieLens_liczby.xlsx": {
+      "rows": 200,
+      "columns": 5,
+      "missing_by_column": {
+        "id_uzytkownika": 0,
+        "id_filmu": 0,
+        "ocena": 0,
+        "czas_unix": 0,
+        "rok_premiery": 0
+      },
+      "duplicate_full_rows": 0,
+      "python_types": {
+        "id_uzytkownika": [
+          "int"
+        ],
+        "id_filmu": [
+          "int"
+        ],
+        "ocena": [
+          "int"
+        ],
+        "czas_unix": [
+          "int"
+        ],
+        "rok_premiery": [
+          "int"
+        ]
+      }
+    },
+    "MovieLens_filmy.xlsx": {
+      "rows": 200,
+      "columns": 6,
+      "missing_by_column": {
+        "id_filmu": 0,
+        "tytul_filmu": 0,
+        "ocena": 0,
+        "rok_premiery": 0,
+        "id_uzytkownika": 0,
+        "czas_unix": 0
+      },
+      "duplicate_full_rows": 0,
+      "python_types": {
+        "id_filmu": [
+          "int"
+        ],
+        "tytul_filmu": [
+          "str"
+        ],
+        "ocena": [
+          "int"
+        ],
+        "rok_premiery": [
+          "int"
+        ],
+        "id_uzytkownika": [
+          "int"
+        ],
+        "czas_unix": [
+          "int"
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "IMDb_recenzje.xlsx": "8cabb6367e9925acebc70f5ff93d7918794ef6324833f68a138e64ace7b161a1",
+    "MovieLens_liczby.xlsx": "2c518244e9df1e48d4f96130f0914c6eedfdcf0d6188eabb37b6bde00663f4e4",
+    "MovieLens_filmy.xlsx": "ac4064899559f347d6e14305dd06d8e87220a0cfb490f6a89774a1ac8f16f3a7"
+  },
+  "movielens_views_identical": true,
+  "imdb": {
+    "n": 200,
+    "classes": {
+      "pozytywny": 100,
+      "negatywny": 100
+    },
+    "unique_titles": 189,
+    "max_reviews_per_title": 2,
+    "titles_with_multiple_reviews": 11,
+    "html_reviews": 122,
+    "word_counts": {
+      "negatywny": {
+        "n": 100,
+        "mean": 237.86,
+        "median": 186.0,
+        "std_sample": 162.10989040048287,
+        "min": 31.0,
+        "q1": 132.75,
+        "q3": 307.5,
+        "max": 972.0
+      },
+      "pozytywny": {
+        "n": 100,
+        "mean": 258.92,
+        "median": 169.5,
+        "std_sample": 204.14971135533023,
+        "min": 51.0,
+        "q1": 129.25,
+        "q3": 311.75,
+        "max": 908.0
+      }
+    },
+    "overall_word_count": {
+      "n": 200,
+      "mean": 248.39,
+      "median": 176.5,
+      "std_sample": 184.17126042308865,
+      "min": 31.0,
+      "q1": 131.75,
+      "q3": 309.25,
+      "max": 972.0
+    },
+    "median_difference_positive_minus_negative": -16.5,
+    "top_tokens": {
+      "negatywny": [
+        [
+          "not",
+          140
+        ],
+        [
+          "like",
+          96
+        ],
+        [
+          "good",
+          72
+        ],
+        [
+          "bad",
+          72
+        ],
+        [
+          "it's",
+          69
+        ],
+        [
+          "don't",
+          53
+        ],
+        [
+          "plot",
+          40
+        ],
+        [
+          "characters",
+          39
+        ],
+        [
+          "story",
+          38
+        ],
+        [
+          "any",
+          37
+        ],
+        [
+          "character",
+          35
+        ],
+        [
+          "ever",
+          26
+        ]
+      ],
+      "pozytywny": [
+        [
+          "not",
+          123
+        ],
+        [
+          "it's",
+          84
+        ],
+        [
+          "great",
+          66
+        ],
+        [
+          "like",
+          64
+        ],
+        [
+          "good",
+          63
+        ],
+        [
+          "story",
+          55
+        ],
+        [
+          "family",
+          42
+        ],
+        [
+          "don't",
+          38
+        ],
+        [
+          "love",
+          34
+        ],
+        [
+          "best",
+          34
+        ],
+        [
+          "man",
+          33
+        ],
+        [
+          "ever",
+          31
+        ]
+      ]
+    },
+    "top_document_frequency": {
+      "negatywny": [
+        [
+          "not",
+          66
+        ],
+        [
+          "like",
+          53
+        ],
+        [
+          "bad",
+          43
+        ],
+        [
+          "good",
+          38
+        ],
+        [
+          "it's",
+          38
+        ],
+        [
+          "don't",
+          36
+        ],
+        [
+          "plot",
+          31
+        ],
+        [
+          "characters",
+          29
+        ],
+        [
+          "story",
+          26
+        ],
+        [
+          "character",
+          22
+        ],
+        [
+          "any",
+          22
+        ],
+        [
+          "better",
+          22
+        ]
+      ],
+      "pozytywny": [
+        [
+          "not",
+          60
+        ],
+        [
+          "great",
+          43
+        ],
+        [
+          "like",
+          40
+        ],
+        [
+          "story",
+          37
+        ],
+        [
+          "good",
+          37
+        ],
+        [
+          "it's",
+          36
+        ],
+        [
+          "ever",
+          25
+        ],
+        [
+          "best",
+          24
+        ],
+        [
+          "end",
+          22
+        ],
+        [
+          "family",
+          22
+        ],
+        [
+          "better",
+          22
+        ],
+        [
+          "another",
+          22
+        ]
+      ]
+    },
+    "metadata_types": {
+      "movie": 167,
+      "video": 8,
+      "tvMiniSeries": 3,
+      "tvMovie": 14,
+      "videoGame": 1,
+      "tvEpisode": 2,
+      "tvSeries": 3,
+      "tvSpecial": 1,
+      "short": 1
+    }
+  },
+  "movielens": {
+    "n": 200,
+    "unique_users": 161,
+    "unique_movies": 172,
+    "rating_summary": {
+      "n": 200,
+      "mean": 3.42,
+      "median": 3.0,
+      "std_sample": 1.204514122522764,
+      "min": 1.0,
+      "q1": 3.0,
+      "q3": 4.0,
+      "max": 5.0
+    },
+    "year_summary": {
+      "n": 200,
+      "mean": 1988.215,
+      "median": 1994.0,
+      "std_sample": 13.915710907109679,
+      "min": 1938.0,
+      "q1": 1986.75,
+      "q3": 1996.0,
+      "max": 1998.0
+    },
+    "rating_counts": {
+      "1": 16,
+      "2": 27,
+      "3": 59,
+      "4": 53,
+      "5": 45
+    },
+    "rating_date_min_utc": "1997-09-21T08:03:55+00:00",
+    "rating_date_max_utc": "1998-04-22T04:14:13+00:00",
+    "rating_counts_per_user": {
+      "1": 133,
+      "2": 21,
+      "3": 4,
+      "4": 2,
+      "5": 1
+    },
+    "rating_counts_per_movie": {
+      "1": 150,
+      "2": 18,
+      "3": 2,
+      "4": 2
+    },
+    "single_rating_movies": 150,
+    "single_rating_users": 133,
+    "max_ratings_per_movie": 4,
+    "max_ratings_per_user": 5,
+    "spearman_year_rating": -0.12435319729520787,
+    "spearman_year_film_mean": -0.16420588023165705,
+    "decades": [
+      {
+        "decade": 1930,
+        "n": 3,
+        "mean": 4.333333333333333,
+        "median": 4.0
+      },
+      {
+        "decade": 1940,
+        "n": 7,
+        "mean": 3.857142857142857,
+        "median": 4.0
+      },
+      {
+        "decade": 1950,
+        "n": 5,
+        "mean": 3.4,
+        "median": 4.0
+      },
+      {
+        "decade": 1960,
+        "n": 4,
+        "mean": 4.0,
+        "median": 4.0
+      },
+      {
+        "decade": 1970,
+        "n": 11,
+        "mean": 3.5454545454545454,
+        "median": 4.0
+      },
+      {
+        "decade": 1980,
+        "n": 29,
+        "mean": 4.0,
+        "median": 4.0
+      },
+      {
+        "decade": 1990,
+        "n": 141,
+        "mean": 3.234042553191489,
+        "median": 3.0
+      }
+    ],
+    "rating_share_4_5": 0.49
+  }
+}

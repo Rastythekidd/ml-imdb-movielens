@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/stanfordnlp/imdb",
+    "http": 200,
+    "title": "stanfordnlp/imdb · Datasets at Hugging Face"
+  },
+  {
+    "url": "https://huggingface.co/datasets/stanfordnlp/imdb/resolve/main/plain_text/train-00000-of-00001.parquet",
+    "http": 206,
+    "title": null
+  },
+  {
+    "url": "https://www.grouplens.org/datasets/movielens/100k/",
+    "error": "<urlopen error timed out>"
+  },
+  {
+    "url": "https://lenskit.grouplens.org/datasets/movielens/100k/",
+    "error": "<urlopen error timed out>"
+  },
+  {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k-README.txt",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate rejected (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate rejected (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://api.crossref.org/works/10.1145%2F2827872",
+    "http": 200,
+    "title": null
+  }
+]

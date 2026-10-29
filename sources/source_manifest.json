@@ -1,0 +1,3913 @@
+{
+  "collection_date": "2026-10-25",
+  "analysis_date": "2026-10-27",
+  "random_seed": 42,
+  "sources": {
+    "imdb": {
+      "page": "https://ai.stanford.edu/~amaas/data/sentiment/",
+      "archive_url": "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+      "archive_sha256": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+      "mirror": "https://huggingface.co/datasets/stanfordnlp/imdb",
+      "initial_parquet_sha256": "db47d16b5c297cc0dd625e519c81319c24c9149e70e8496de5475f6fa928342c",
+      "initial_parquet_path": "plain_text/train-00000-of-00001.parquet"
+    },
+    "movielens": {
+      "page": "https://grouplens.org/datasets/movielens/100k/",
+      "archive_url": "https://files.grouplens.org/datasets/movielens/ml-100k.zip",
+      "archive_sha256": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229"
+    },
+    "metadata": {
+      "page": "https://developer.imdb.com/non-commercial-datasets/",
+      "archive_url": "https://datasets.imdbws.com/title.basics.tsv.gz",
+      "snapshot_date": "2026-10-25",
+      "note": "Źródło aktualizowane codziennie. Wybrane metadane i hash lokalnego archiwum zachowano w projekcie.",
+      "archive_sha256": "bffa506d7d2c541087dbe3fc8405f69425af8f29cdacf8d44340c84877ba7f39"
+    }
+  },
+  "sampling": {
+    "imdb": "Z 25 000 wierszy train: jeden Random(42), 100 indeksów klasy 0, potem 100 klasy 1 i shuffle. Następnie 11 zamian w tych samych klasach zgodnie z rejestrem. Końcowa próba nie jest prostą próbą losową.",
+    "movielens": "random.Random(42).sample(range(100000), 200), z zachowaniem kolejności u.data. Nazwy i lata z u.item według ID filmu."
+  },
+  "replacement_records": [
+    {
+      "row_index": 27,
+      "old_imdb_id": "tt0340817",
+      "new_file": "aclImdb/train/pos/2885_9.txt",
+      "new_imdb_id": "tt0042332"
+    },
+    {
+      "row_index": 52,
+      "old_imdb_id": "tt0299380",
+      "new_file": "aclImdb/train/neg/11657_4.txt",
+      "new_imdb_id": "tt0257106"
+    },
+    {
+      "row_index": 54,
+      "old_imdb_id": "tt0250536",
+      "new_file": "aclImdb/train/pos/12312_10.txt",
+      "new_imdb_id": "tt0093978"
+    },
+    {
+      "row_index": 67,
+      "old_imdb_id": "tt0266860",
+      "new_file": "aclImdb/train/neg/10371_3.txt",
+      "new_imdb_id": "tt0037382"
+    },
+    {
+      "row_index": 91,
+      "old_imdb_id": "tt0247804",
+      "new_file": "aclImdb/train/pos/1954_10.txt",
+      "new_imdb_id": "tt0430912"
+    },
+    {
+      "row_index": 95,
+      "old_imdb_id": "tt0367457",
+      "new_file": "aclImdb/train/neg/9773_1.txt",
+      "new_imdb_id": "tt0097714"
+    },
+    {
+      "row_index": 160,
+      "old_imdb_id": "tt0884321",
+      "new_file": "aclImdb/train/pos/3756_8.txt",
+      "new_imdb_id": "tt0048295"
+    },
+    {
+      "row_index": 163,
+      "old_imdb_id": "tt0384507",
+      "new_file": "aclImdb/train/neg/2844_4.txt",
+      "new_imdb_id": "tt0024130"
+    },
+    {
+      "row_index": 171,
+      "old_imdb_id": "tt0366179",
+      "new_file": "aclImdb/train/pos/11520_8.txt",
+      "new_imdb_id": "tt0188045"
+    },
+    {
+      "row_index": 178,
+      "old_imdb_id": "tt0945542",
+      "new_file": "aclImdb/train/pos/11380_7.txt",
+      "new_imdb_id": "tt0043278"
+    },
+    {
+      "row_index": 194,
+      "old_imdb_id": "tt0383735",
+      "new_file": "aclImdb/train/pos/43_10.txt",
+      "new_imdb_id": "tt0264689"
+    }
+  ],
+  "imdb_rows": [
+    {
+      "row_index": 0,
+      "excel_row": 2,
+      "initial_parquet_index": 21297,
+      "archive_file": "aclImdb/train/pos/8738_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0120623/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0120623",
+      "title_snapshot": "A Bug's Life (1998)",
+      "sentiment": "pozytywny",
+      "text_sha256": "13e50b04f124725271d5d3e4e898b70e291ed0aca2328d084c5351de907b84c8",
+      "title_metadata": {
+        "title": "A Bug's Life",
+        "original_title": "A Bug's Life",
+        "year": "1998",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 1,
+      "excel_row": 3,
+      "initial_parquet_index": 16922,
+      "archive_file": "aclImdb/train/pos/4409_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0134154/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0134154",
+      "title_snapshot": "Ride with the Devil (1999)",
+      "sentiment": "pozytywny",
+      "text_sha256": "6e518da3d71e6b3170935307e91daee6c787b545b703a2ae721b56267109ac56",
+      "title_metadata": {
+        "title": "Ride with the Devil",
+        "original_title": "Ride with the Devil",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 2,
+      "excel_row": 4,
+      "initial_parquet_index": 6224,
+      "archive_file": "aclImdb/train/neg/6191_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0065911/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0065911",
+      "title_snapshot": "Jane Eyre (1970)",
+      "sentiment": "negatywny",
+      "text_sha256": "5b368db0ba8f285312e2520a86f09a9e2e2533744fc18c7d2639728f76a82167",
+      "title_metadata": {
+        "title": "Jane Eyre",
+        "original_title": "Jane Eyre",
+        "year": "1970",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 3,
+      "excel_row": 5,
+      "initial_parquet_index": 2664,
+      "archive_file": "aclImdb/train/neg/2583_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0974959/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0974959",
+      "title_snapshot": "American Pie Presents: Beta House (2007)",
+      "sentiment": "negatywny",
+      "text_sha256": "da0f62514e280f649983f91d283a4e6f12584aac21e2bf1077d2c8d0698bbef5",
+      "title_metadata": {
+        "title": "American Pie Presents: Beta House",
+        "original_title": "American Pie Presents: Beta House",
+        "year": "2007",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 4,
+      "excel_row": 6,
+      "initial_parquet_index": 13989,
+      "archive_file": "aclImdb/train/pos/1454_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0115907/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0115907",
+      "title_snapshot": "City Hall (1996)",
+      "sentiment": "pozytywny",
+      "text_sha256": "083c7997add62acc2e727e6729069807f60b7ed5a6deab9d62a4ee87fdbc6e25",
+      "title_metadata": {
+        "title": "City Hall",
+        "original_title": "City Hall",
+        "year": "1996",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 5,
+      "excel_row": 7,
+      "initial_parquet_index": 15427,
+      "archive_file": "aclImdb/train/pos/2832_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0065208/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0065208",
+      "title_snapshot": "Where It's At (1969)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c158a9040097c18e8427044deeacc291cf27d57c7489d204363d1f75c194efc4",
+      "title_metadata": {
+        "title": "Where It's At",
+        "original_title": "Where It's At",
+        "year": "1969",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 6,
+      "excel_row": 8,
+      "initial_parquet_index": 11199,
+      "archive_file": "aclImdb/train/neg/11200_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0304711/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0304711",
+      "title_snapshot": "The Order (2003)",
+      "sentiment": "negatywny",
+      "text_sha256": "9fb9547c5f4a02a79cafeca3bc0a96ef3f23e81f216e3d659ff23396d2a042e2",
+      "title_metadata": {
+        "title": "The Order",
+        "original_title": "The Order",
+        "year": "2003",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 7,
+      "excel_row": 9,
+      "initial_parquet_index": 2677,
+      "archive_file": "aclImdb/train/neg/2570_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0066449/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0066449",
+      "title_snapshot": "There's a Girl in My Soup (1970)",
+      "sentiment": "negatywny",
+      "text_sha256": "b1c0257cbecbc281c694274b4b14e2b5d1a588c71ea843ddd5a7411c6b1ab904",
+      "title_metadata": {
+        "title": "There's a Girl in My Soup",
+        "original_title": "There's a Girl in My Soup",
+        "year": "1970",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 8,
+      "excel_row": 10,
+      "initial_parquet_index": 18430,
+      "archive_file": "aclImdb/train/pos/5973_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0092112/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0092112",
+      "title_snapshot": "Trick or Treat (1986)",
+      "sentiment": "pozytywny",
+      "text_sha256": "e2853110e1fca3d5516d6348dff9d4cc2819575b5db62a6832575ee7125a4ccc",
+      "title_metadata": {
+        "title": "Trick or Treat",
+        "original_title": "Trick or Treat",
+        "year": "1986",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 9,
+      "excel_row": 11,
+      "initial_parquet_index": 9980,
+      "archive_file": "aclImdb/train/neg/9859_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0485909/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0485909",
+      "title_snapshot": "Gamers (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "95d8d0bafa47eb30bd0b86c4474c28450b2f5d4b9bf65b662b44c32b7d5d38c5",
+      "title_metadata": {
+        "title": "Gamers",
+        "original_title": "Gamers",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 10,
+      "excel_row": 12,
+      "initial_parquet_index": 22968,
+      "archive_file": "aclImdb/train/pos/10395_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0033152/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0033152",
+      "title_snapshot": "The Thief of Bagdad (1940)",
+      "sentiment": "pozytywny",
+      "text_sha256": "1e0625759eb527330b5bdb2f184f0423d886240e7d1d5a3571c75121a362c931",
+      "title_metadata": {
+        "title": "The Thief of Bagdad",
+        "original_title": "The Thief of Bagdad",
+        "year": "1940",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 11,
+      "excel_row": 13,
+      "initial_parquet_index": 9863,
+      "archive_file": "aclImdb/train/neg/9976_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0100419/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0100419",
+      "title_snapshot": "Problem Child (1990)",
+      "sentiment": "negatywny",
+      "text_sha256": "8a20c42d7deb96188cf41eb52e9480f8c44f7f7efb1ad1a33d2d133f329d3929",
+      "title_metadata": {
+        "title": "Problem Child",
+        "original_title": "Problem Child",
+        "year": "1990",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 12,
+      "excel_row": 14,
+      "initial_parquet_index": 10617,
+      "archive_file": "aclImdb/train/neg/10502_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0305396/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0305396",
+      "title_snapshot": "The Crocodile Hunter: Collision Course (2002)",
+      "sentiment": "negatywny",
+      "text_sha256": "e62803409a56279dab143d9e9efe3791ef4bb1f07d1e523761dd2122660f4196",
+      "title_metadata": {
+        "title": "The Crocodile Hunter: Collision Course",
+        "original_title": "The Crocodile Hunter: Collision Course",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 13,
+      "excel_row": 15,
+      "initial_parquet_index": 12819,
+      "archive_file": "aclImdb/train/pos/320_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0061834/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0061834",
+      "title_snapshot": "I Am Curious (Yellow) (1967)",
+      "sentiment": "pozytywny",
+      "text_sha256": "5fa1d5be5633b4c6aebc1714409ca976ba518d75b35c812a1196119aed0168be",
+      "title_metadata": {
+        "title": "I Am Curious (Yellow)",
+        "original_title": "Jag är nyfiken - gul",
+        "year": "1967",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 14,
+      "excel_row": 16,
+      "initial_parquet_index": 6227,
+      "archive_file": "aclImdb/train/neg/6188_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0065911/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0065911",
+      "title_snapshot": "Jane Eyre (1970)",
+      "sentiment": "negatywny",
+      "text_sha256": "b3b8b2875630ec9cc65929a7ec2aa1e9a5e02bba8c17c2b70bceef56a91f9ce3",
+      "title_metadata": {
+        "title": "Jane Eyre",
+        "original_title": "Jane Eyre",
+        "year": "1970",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 15,
+      "excel_row": 17,
+      "initial_parquet_index": 22780,
+      "archive_file": "aclImdb/train/pos/10327_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0042752/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0042752",
+      "title_snapshot": "Trio (1950)",
+      "sentiment": "pozytywny",
+      "text_sha256": "444cdf7894727dc35918da5dc29057ddf4e2c899908d1e2eb5796f938b1d901f",
+      "title_metadata": {
+        "title": "Trio",
+        "original_title": "Trio",
+        "year": "1950",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 16,
+      "excel_row": 18,
+      "initial_parquet_index": 11490,
+      "archive_file": "aclImdb/train/neg/11421_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0090060/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0090060",
+      "title_snapshot": "St. Elmo's Fire (1985)",
+      "sentiment": "negatywny",
+      "text_sha256": "b439be5b2cefa6900480f8f66caa1259e3807c5bb417cb5ddba0fceddeeace7b",
+      "title_metadata": {
+        "title": "St. Elmo's Fire",
+        "original_title": "St. Elmo's Fire",
+        "year": "1985",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 17,
+      "excel_row": 19,
+      "initial_parquet_index": 23649,
+      "archive_file": "aclImdb/train/pos/11250_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0092425/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0092425",
+      "title_snapshot": "A Perfect Spy (1987)",
+      "sentiment": "pozytywny",
+      "text_sha256": "450f6d7c6140637a81728596aa0f6dd2470ff128cfdb77f901adf1496e5ab8ea",
+      "title_metadata": {
+        "title": "A Perfect Spy",
+        "original_title": "A Perfect Spy",
+        "year": "1987",
+        "title_type": "tvMiniSeries"
+      }
+    },
+    {
+      "row_index": 18,
+      "excel_row": 20,
+      "initial_parquet_index": 5514,
+      "archive_file": "aclImdb/train/neg/5621_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0455507/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0455507",
+      "title_snapshot": "The God Who Wasn't There (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "f891da2bf1a735b4edfd91c7293733aa185e10e65e297703446dc7e7c67cf3e3",
+      "title_metadata": {
+        "title": "The God Who Wasn't There",
+        "original_title": "The God Who Wasn't There",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 19,
+      "excel_row": 21,
+      "initial_parquet_index": 6216,
+      "archive_file": "aclImdb/train/neg/6199_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0459387/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0459387",
+      "title_snapshot": "The Great Ecstasy of Robert Carmichael (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "d05444c0d2a3a899b9a868d7b5e9ceacee12508c6144a0e670b24e19c767517d",
+      "title_metadata": {
+        "title": "The Great Ecstasy of Robert Carmichael",
+        "original_title": "The Great Ecstasy of Robert Carmichael",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 20,
+      "excel_row": 22,
+      "initial_parquet_index": 13025,
+      "archive_file": "aclImdb/train/pos/626_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0486655/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0486655",
+      "title_snapshot": "Stardust (2007)",
+      "sentiment": "pozytywny",
+      "text_sha256": "4a7073dbda3b667ae98dc4f52af64f019b673b5808d7b306815816acce0ff1b0",
+      "title_metadata": {
+        "title": "Stardust",
+        "original_title": "Stardust",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 21,
+      "excel_row": 23,
+      "initial_parquet_index": 19072,
+      "archive_file": "aclImdb/train/pos/6611_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0386741/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0386741",
+      "title_snapshot": "Renaissance (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "d7378defbc6f4827da08c704f3cd493a150c44be33a18287c5ab41ef75746589",
+      "title_metadata": {
+        "title": "Renaissance",
+        "original_title": "Renaissance",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 22,
+      "excel_row": 24,
+      "initial_parquet_index": 1674,
+      "archive_file": "aclImdb/train/neg/1781_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0105428/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0105428",
+      "title_snapshot": "Sleepwalkers (1992)",
+      "sentiment": "negatywny",
+      "text_sha256": "f250547ffae4d534852f654b1abed9d387f67320422ac9157e9defb8738e2675",
+      "title_metadata": {
+        "title": "Sleepwalkers",
+        "original_title": "Sleepwalkers",
+        "year": "1992",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 23,
+      "excel_row": 25,
+      "initial_parquet_index": 1307,
+      "archive_file": "aclImdb/train/neg/1380_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0315323/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0315323",
+      "title_snapshot": "Break a Leg (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "d6af3ea2b582c9363b69ebc0598f9774a92baf33d895d0ae80422a28b2532b55",
+      "title_metadata": {
+        "title": "Break a Leg",
+        "original_title": "Break a Leg",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 24,
+      "excel_row": 26,
+      "initial_parquet_index": 15956,
+      "archive_file": "aclImdb/train/pos/3583_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0114419/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0114419",
+      "title_snapshot": "She Fought Alone (1995)",
+      "sentiment": "pozytywny",
+      "text_sha256": "af9b4b57be5589636cc478a9ded189ccc5db70fb691a001041d8dde0d945a5fe",
+      "title_metadata": {
+        "title": "She Fought Alone",
+        "original_title": "She Fought Alone",
+        "year": "1995",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 25,
+      "excel_row": 27,
+      "initial_parquet_index": 5635,
+      "archive_file": "aclImdb/train/neg/5756_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0091188/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0091188",
+      "title_snapshot": "Heartburn (1986)",
+      "sentiment": "negatywny",
+      "text_sha256": "807aaa378cd0ff5240a27d9904c2f24217b97d67c386052c459fde7534b5dbcc",
+      "title_metadata": {
+        "title": "Heartburn",
+        "original_title": "Heartburn",
+        "year": "1986",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 26,
+      "excel_row": 28,
+      "initial_parquet_index": 12149,
+      "archive_file": "aclImdb/train/neg/12042_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0332452/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0332452",
+      "title_snapshot": "Troy (2004)",
+      "sentiment": "negatywny",
+      "text_sha256": "34bb268098cfc0b60cb8ca7d22271df4f2883acf0e7411ca7a71436ed31e6f2e",
+      "title_metadata": {
+        "title": "Troy",
+        "original_title": "Troy",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 27,
+      "excel_row": 29,
+      "initial_parquet_index": 15121,
+      "archive_file": "aclImdb/train/pos/2885_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0042332/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0042332",
+      "title_snapshot": "Cinderella (1950)",
+      "sentiment": "pozytywny",
+      "text_sha256": "71a9b1ffefb356f4c4688bc5440c99e048bbc285a2da07867fc59c5d909ce601",
+      "title_metadata": {
+        "title": "Cinderella",
+        "original_title": "Cinderella",
+        "year": "1950",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 28,
+      "excel_row": 30,
+      "initial_parquet_index": 4557,
+      "archive_file": "aclImdb/train/neg/4530_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0209809/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0209809",
+      "title_snapshot": "Split Second (1999)",
+      "sentiment": "negatywny",
+      "text_sha256": "6c1e62b2f19fe3a0061900c085ccd71ae4140c7f07f0071892ef953a2f65bc45",
+      "title_metadata": {
+        "title": "Split Second",
+        "original_title": "Split Second",
+        "year": "1999",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 29,
+      "excel_row": 31,
+      "initial_parquet_index": 17810,
+      "archive_file": "aclImdb/train/pos/5313_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0126604/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0126604",
+      "title_snapshot": "Pecker (1998)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a462c5a362f039994457c07e0b3a076c615e7cb38f43f71fe9802f47229c9bb7",
+      "title_metadata": {
+        "title": "Pecker",
+        "original_title": "Pecker",
+        "year": "1998",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 30,
+      "excel_row": 32,
+      "initial_parquet_index": 11498,
+      "archive_file": "aclImdb/train/neg/11413_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0353161/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0353161",
+      "title_snapshot": "Ready, Steady, Charlie! (2003)",
+      "sentiment": "negatywny",
+      "text_sha256": "1350d2c1e20e97380241f6fae37df73e9d1dd9856a529ea2bf087ef1388b9314",
+      "title_metadata": {
+        "title": "Ready, Steady, Charlie!",
+        "original_title": "Achtung, fertig, Charlie!",
+        "year": "2003",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 31,
+      "excel_row": 33,
+      "initial_parquet_index": 15004,
+      "archive_file": "aclImdb/train/pos/2487_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0116477/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0116477",
+      "title_snapshot": "Hamlet (1996)",
+      "sentiment": "pozytywny",
+      "text_sha256": "3354f86253c0223a35d61a2db60bb23ffe2d4afc4dedd60d225b44b392639d63",
+      "title_metadata": {
+        "title": "Hamlet",
+        "original_title": "Hamlet",
+        "year": "1996",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 32,
+      "excel_row": 34,
+      "initial_parquet_index": 24308,
+      "archive_file": "aclImdb/train/pos/11871_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0086250/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0086250",
+      "title_snapshot": "Scarface (1983)",
+      "sentiment": "pozytywny",
+      "text_sha256": "b9a2eb8aebeff85334359ebd808874dd0401c0ab20eb3aa780a9b97ceeb3c6ce",
+      "title_metadata": {
+        "title": "Scarface",
+        "original_title": "Scarface",
+        "year": "1983",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 33,
+      "excel_row": 35,
+      "initial_parquet_index": 8928,
+      "archive_file": "aclImdb/train/neg/8863_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0089308/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0089308",
+      "title_snapshot": "Howling II: ... Your Sister Is a Werewolf (1985)",
+      "sentiment": "negatywny",
+      "text_sha256": "4b5d317108bb7615dee1fc1c8b78e196833f4d9009d02685e759cc99f26eaf7e",
+      "title_metadata": {
+        "title": "Howling II: ... Your Sister Is a Werewolf",
+        "original_title": "Howling II: Stirba - Werewolf Bitch",
+        "year": "1985",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 34,
+      "excel_row": 36,
+      "initial_parquet_index": 19933,
+      "archive_file": "aclImdb/train/pos/7542_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0326901/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0326901",
+      "title_snapshot": "Good Fences (2003)",
+      "sentiment": "pozytywny",
+      "text_sha256": "f5c220c4e7c613cc40e63af4e848fb562a88803d76744fa536c6ffbbf759c458",
+      "title_metadata": {
+        "title": "Good Fences",
+        "original_title": "Good Fences",
+        "year": "2003",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 35,
+      "excel_row": 37,
+      "initial_parquet_index": 21169,
+      "archive_file": "aclImdb/train/pos/8610_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0430650/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0430650",
+      "title_snapshot": "Surrender, Dorothy (2005)",
+      "sentiment": "pozytywny",
+      "text_sha256": "1d1855f0513c7345c1e7769a569e19e0d345e1ab212be3983b6bb52026932e5e",
+      "title_metadata": {
+        "title": "Surrender, Dorothy",
+        "original_title": "Surrender, Dorothy",
+        "year": "2005",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 36,
+      "excel_row": 38,
+      "initial_parquet_index": 13416,
+      "archive_file": "aclImdb/train/pos/1003_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0162128/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0162128",
+      "title_snapshot": "13 Gantry Row (1998)",
+      "sentiment": "pozytywny",
+      "text_sha256": "cce98142e9b938ded9885840ca83ba6e529bc93f70f1fc552e96c54dafd6bb1f",
+      "title_metadata": {
+        "title": "13 Gantry Row",
+        "original_title": "13 Gantry Row",
+        "year": "1998",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 37,
+      "excel_row": 39,
+      "initial_parquet_index": 4552,
+      "archive_file": "aclImdb/train/neg/4535_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0398842/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0398842",
+      "title_snapshot": "The Celestine Prophecy (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "ef456059eafacf2bfb3b4b37a7c759972eca6aeea0d899ef4731939b09a11969",
+      "title_metadata": {
+        "title": "The Celestine Prophecy",
+        "original_title": "The Celestine Prophecy",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 38,
+      "excel_row": 40,
+      "initial_parquet_index": 711,
+      "archive_file": "aclImdb/train/neg/696_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0082279/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0082279",
+      "title_snapshot": "The Dorm That Dripped Blood (1982)",
+      "sentiment": "negatywny",
+      "text_sha256": "dbf80c4456cc6f57f0da6576d7fd905bb5f4006fe3fb9149aef771f7c8d98ba8",
+      "title_metadata": {
+        "title": "The Dorm That Dripped Blood",
+        "original_title": "The Dorm That Dripped Blood",
+        "year": "1982",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 39,
+      "excel_row": 41,
+      "initial_parquet_index": 1519,
+      "archive_file": "aclImdb/train/neg/1424_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0169863/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0169863",
+      "title_snapshot": "Enter the Eagles (1998)",
+      "sentiment": "negatywny",
+      "text_sha256": "e136af6b5bb518db0fe209ebb878d1db9c6bb82fb0cd7fb2482e931e31b059d7",
+      "title_metadata": {
+        "title": "Enter the Eagles",
+        "original_title": "Hun shen shi dan",
+        "year": "1998",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 40,
+      "excel_row": 42,
+      "initial_parquet_index": 20679,
+      "archive_file": "aclImdb/train/pos/8076_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0437182/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0437182",
+      "title_snapshot": "Family: Ties of Blood (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "db24f3b21b81f5075282f4745f936c66cb1ea3f4de224e9bbf790ded068d84b6",
+      "title_metadata": {
+        "title": "Family: Ties of Blood",
+        "original_title": "Family: Ties of Blood",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 41,
+      "excel_row": 43,
+      "initial_parquet_index": 14376,
+      "archive_file": "aclImdb/train/pos/1835_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0390614/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0390614",
+      "title_snapshot": "Waqt: The Race Against Time (2005)",
+      "sentiment": "pozytywny",
+      "text_sha256": "499d4a287a6b3bf3a36a18c7b181662cdde522f3c2f9e10aa7f8f3886b56b6a4",
+      "title_metadata": {
+        "title": "Waqt: The Race Against Time",
+        "original_title": "Waqt: The Race Against Time",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 42,
+      "excel_row": 44,
+      "initial_parquet_index": 3150,
+      "archive_file": "aclImdb/train/neg/3121_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0448075/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0448075",
+      "title_snapshot": "The Night Listener (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "13629c006b8201c0f2067220455e7d2561c79f791dc8c20110f8fddf23641921",
+      "title_metadata": {
+        "title": "The Night Listener",
+        "original_title": "The Night Listener",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 43,
+      "excel_row": 45,
+      "initial_parquet_index": 10980,
+      "archive_file": "aclImdb/train/neg/10907_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0255798/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0255798",
+      "title_snapshot": "The Animal (2001)",
+      "sentiment": "negatywny",
+      "text_sha256": "d9ea364ee459ceadb1895a5a76554b571c83fc3d90626671c5b3a0ff60c21323",
+      "title_metadata": {
+        "title": "The Animal",
+        "original_title": "The Animal",
+        "year": "2001",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 44,
+      "excel_row": 46,
+      "initial_parquet_index": 6065,
+      "archive_file": "aclImdb/train/neg/6094_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0273896/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0273896",
+      "title_snapshot": "The Nostril Picker (1993)",
+      "sentiment": "negatywny",
+      "text_sha256": "f0e8d9698c9ea578d9193fc7d75df2e0d818c49aef90a4a964977016e0283f7a",
+      "title_metadata": {
+        "title": "The Nostril Picker",
+        "original_title": "The Nostril Picker",
+        "year": "1993",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 45,
+      "excel_row": 47,
+      "initial_parquet_index": 14327,
+      "archive_file": "aclImdb/train/pos/1884_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0082031/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0082031",
+      "title_snapshot": "Arthur (1981)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c099be6fd106bb47e8f61401ad28122931488abbddd43deb5e8f99b43c704ea3",
+      "title_metadata": {
+        "title": "Arthur",
+        "original_title": "Arthur",
+        "year": "1981",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 46,
+      "excel_row": 48,
+      "initial_parquet_index": 20817,
+      "archive_file": "aclImdb/train/pos/8194_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0086383/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0086383",
+      "title_snapshot": "Sudden Impact (1983)",
+      "sentiment": "pozytywny",
+      "text_sha256": "41bdbcddf7e93cf11f224ba963a318b284982b2d956401aa377cb854147cb0e4",
+      "title_metadata": {
+        "title": "Sudden Impact",
+        "original_title": "Sudden Impact",
+        "year": "1983",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 47,
+      "excel_row": 49,
+      "initial_parquet_index": 11731,
+      "archive_file": "aclImdb/train/neg/11692_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0117894/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0117894",
+      "title_snapshot": "Thinner (1996)",
+      "sentiment": "negatywny",
+      "text_sha256": "e45dbc7cf3d932d57883f7d83cfd7207dad32efad16a89908932f2c933acfc1e",
+      "title_metadata": {
+        "title": "Thinner",
+        "original_title": "Thinner",
+        "year": "1996",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 48,
+      "excel_row": 50,
+      "initial_parquet_index": 23645,
+      "archive_file": "aclImdb/train/pos/11254_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0092425/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0092425",
+      "title_snapshot": "A Perfect Spy (1987)",
+      "sentiment": "pozytywny",
+      "text_sha256": "fd31c015824faf43fa85c43dfc869a8667e8630443f22300ba5c5d0353cd9c1d",
+      "title_metadata": {
+        "title": "A Perfect Spy",
+        "original_title": "A Perfect Spy",
+        "year": "1987",
+        "title_type": "tvMiniSeries"
+      }
+    },
+    {
+      "row_index": 49,
+      "excel_row": 51,
+      "initial_parquet_index": 6924,
+      "archive_file": "aclImdb/train/neg/7027_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0254325/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0254325",
+      "title_snapshot": "Comedy of Innocence (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "93edaaa8315eb518c95d1120d94e3c65a81459a77245dc333a646800f6181caf",
+      "title_metadata": {
+        "title": "Comedy of Innocence",
+        "original_title": "Comédie de l'innocence",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 50,
+      "excel_row": 52,
+      "initial_parquet_index": 409,
+      "archive_file": "aclImdb/train/neg/486_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0123385/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0123385",
+      "title_snapshot": "Artemisia (1997)",
+      "sentiment": "negatywny",
+      "text_sha256": "6d6ca1d4fb53f553330eb9f0a973b27c906e79f96c06a63e39d07a77a28bc8dc",
+      "title_metadata": {
+        "title": "Artemisia",
+        "original_title": "Artemisia",
+        "year": "1997",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 51,
+      "excel_row": 53,
+      "initial_parquet_index": 24262,
+      "archive_file": "aclImdb/train/pos/11661_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0485601/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0485601",
+      "title_snapshot": "The Secret of Kells (2009)",
+      "sentiment": "pozytywny",
+      "text_sha256": "21c3420226d11d5c5c218d6607a90d8e7adc1914b4c0104fb3e9f0062787a084",
+      "title_metadata": {
+        "title": "The Secret of Kells",
+        "original_title": "The Secret of Kells",
+        "year": "2009",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 52,
+      "excel_row": 54,
+      "initial_parquet_index": 4554,
+      "archive_file": "aclImdb/train/neg/11657_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0257106/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0257106",
+      "title_snapshot": "Scary Movie 2 (2001)",
+      "sentiment": "negatywny",
+      "text_sha256": "d861b1a23a7b363d224f791f2a63d47f82049017b8cfd6081d99f087bfa747c9",
+      "title_metadata": {
+        "title": "Scary Movie 2",
+        "original_title": "Scary Movie 2",
+        "year": "2001",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 53,
+      "excel_row": 55,
+      "initial_parquet_index": 16871,
+      "archive_file": "aclImdb/train/pos/4460_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0037514/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0037514",
+      "title_snapshot": "Anchors Aweigh (1945)",
+      "sentiment": "pozytywny",
+      "text_sha256": "b038b5e5a5bfac9bb08d46cb744737990151c4e751377c417f939b24c9e5302b",
+      "title_metadata": {
+        "title": "Anchors Aweigh",
+        "original_title": "Anchors Aweigh",
+        "year": "1945",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 54,
+      "excel_row": 56,
+      "initial_parquet_index": 23032,
+      "archive_file": "aclImdb/train/pos/12312_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0093978/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0093978",
+      "title_snapshot": "A Chinese Ghost Story (1987)",
+      "sentiment": "pozytywny",
+      "text_sha256": "bd7e4f766185fc9954de26f823c28e69dd0e395ce7ac1c4aa8150bfb696b0fe5",
+      "title_metadata": {
+        "title": "A Chinese Ghost Story",
+        "original_title": "Sien lui yau wan",
+        "year": "1987",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 55,
+      "excel_row": 57,
+      "initial_parquet_index": 9459,
+      "archive_file": "aclImdb/train/neg/9356_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0021435/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0021435",
+      "title_snapshot": "Sunny (1930)",
+      "sentiment": "negatywny",
+      "text_sha256": "3c7a0f750251f8a441922a45c738aab89484cbc1b2ca64078c9bbb0f0583147b",
+      "title_metadata": {
+        "title": "Sunny",
+        "original_title": "Sunny",
+        "year": "1930",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 56,
+      "excel_row": 58,
+      "initial_parquet_index": 16540,
+      "archive_file": "aclImdb/train/pos/4023_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0347779/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0347779",
+      "title_snapshot": "Pinjar (2003)",
+      "sentiment": "pozytywny",
+      "text_sha256": "26ce1fe7d9185c19fcfc17877fc912c7ca1a7d86d70b4660205acd89904f2ee8",
+      "title_metadata": {
+        "title": "Pinjar",
+        "original_title": "Pinjar: Beyond Boundaries...",
+        "year": "2003",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 57,
+      "excel_row": 59,
+      "initial_parquet_index": 18804,
+      "archive_file": "aclImdb/train/pos/6368_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0230011/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0230011",
+      "title_snapshot": "Atlantis: The Lost Empire (2001)",
+      "sentiment": "pozytywny",
+      "text_sha256": "4301f3f41c01bb191d50406cc199b7f77d3f8ebc90ace3eaba0df84ffafa0232",
+      "title_metadata": {
+        "title": "Atlantis: The Lost Empire",
+        "original_title": "Atlantis: The Lost Empire",
+        "year": "2001",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 58,
+      "excel_row": 60,
+      "initial_parquet_index": 7527,
+      "archive_file": "aclImdb/train/neg/7448_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0100056/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0100056",
+      "title_snapshot": "Lorna Doone (1990)",
+      "sentiment": "negatywny",
+      "text_sha256": "095ca078f9b86282f49dd15a60eeecbf19bfc1869b8b09349c88b5df4498bd62",
+      "title_metadata": {
+        "title": "Lorna Doone",
+        "original_title": "Lorna Doone",
+        "year": "1990",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 59,
+      "excel_row": 61,
+      "initial_parquet_index": 20017,
+      "archive_file": "aclImdb/train/pos/7458_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0366629/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0366629",
+      "title_snapshot": "James Bond 007: Everything or Nothing (2003)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a802860ee94b5e94e4f3419868f3e884528d6c1bf5ddf4dc65b7e4c2663295c4",
+      "title_metadata": {
+        "title": "James Bond 007: Everything or Nothing",
+        "original_title": "James Bond 007: Everything or Nothing",
+        "year": "2003",
+        "title_type": "videoGame"
+      }
+    },
+    {
+      "row_index": 60,
+      "excel_row": 62,
+      "initial_parquet_index": 5977,
+      "archive_file": "aclImdb/train/neg/5926_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0708433/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0708433",
+      "title_snapshot": "Is There in Truth No Beauty? (1968)",
+      "sentiment": "negatywny",
+      "text_sha256": "7a84ab84fd3ebb4eb2badbe7091ce15985b087525e0e55ef3f197e88e5dd865d",
+      "title_metadata": {
+        "title": "Is There in Truth No Beauty?",
+        "original_title": "Is There in Truth No Beauty?",
+        "year": "1968",
+        "title_type": "tvEpisode"
+      }
+    },
+    {
+      "row_index": 61,
+      "excel_row": 63,
+      "initial_parquet_index": 11438,
+      "archive_file": "aclImdb/train/neg/11473_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0118958/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0118958",
+      "title_snapshot": "The Deli (1997)",
+      "sentiment": "negatywny",
+      "text_sha256": "283bd6f7b8e80042f54785bf69a025e851f7589c70707531b1ca925c9c62fc7e",
+      "title_metadata": {
+        "title": "The Deli",
+        "original_title": "The Deli",
+        "year": "1997",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 62,
+      "excel_row": 64,
+      "initial_parquet_index": 4506,
+      "archive_file": "aclImdb/train/neg/4581_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0399877/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0399877",
+      "title_snapshot": "What the #$*! Do We (K)now!? (2004)",
+      "sentiment": "negatywny",
+      "text_sha256": "957346c1cacbc1517c91596e77362d1d691138df5ad076b4f88ed10323476d4a",
+      "title_metadata": {
+        "title": "What the #$*! Do We (K)now!?",
+        "original_title": "What the #$*! Do We (K)now!?",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 63,
+      "excel_row": 65,
+      "initial_parquet_index": 18073,
+      "archive_file": "aclImdb/train/pos/5562_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0080520/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0080520",
+      "title_snapshot": "Cheech and Chong's Next Movie (1980)",
+      "sentiment": "pozytywny",
+      "text_sha256": "aa61630eb622dc7521052a4e8c170379a1b45d69a4a7f42397d179405f9279f4",
+      "title_metadata": {
+        "title": "Cheech and Chong's Next Movie",
+        "original_title": "Cheech and Chong's Next Movie",
+        "year": "1980",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 64,
+      "excel_row": 66,
+      "initial_parquet_index": 11087,
+      "archive_file": "aclImdb/train/neg/11056_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0422783/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0422783",
+      "title_snapshot": "Music Within (2007)",
+      "sentiment": "negatywny",
+      "text_sha256": "8a5b5291f78d5d685ca677110bec1b3f71c0efaa269364f07010454e28339082",
+      "title_metadata": {
+        "title": "Music Within",
+        "original_title": "Music Within",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 65,
+      "excel_row": 67,
+      "initial_parquet_index": 21330,
+      "archive_file": "aclImdb/train/pos/8705_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0477337/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0477337",
+      "title_snapshot": "The Sword Bearer (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c849da60a2176bfddee7319f9722a4050f16cac9d1b71c37780712e03e67eeb7",
+      "title_metadata": {
+        "title": "The Sword Bearer",
+        "original_title": "Mechenosets",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 66,
+      "excel_row": 68,
+      "initial_parquet_index": 21189,
+      "archive_file": "aclImdb/train/pos/8590_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0443632/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0443632",
+      "title_snapshot": "The Sentinel (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "3fe750f5dfd3b6283b05e0ac3f9aa4a8f6d606f491b148010872d1b587e073f6",
+      "title_metadata": {
+        "title": "The Sentinel",
+        "original_title": "The Sentinel",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 67,
+      "excel_row": 69,
+      "initial_parquet_index": 5925,
+      "archive_file": "aclImdb/train/neg/10371_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0037382/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0037382",
+      "title_snapshot": "To Have and Have Not (1944)",
+      "sentiment": "negatywny",
+      "text_sha256": "50ee478fbe8da5912b55e6f75c93ebc6c7ddf9d6145b31528526e17c0c6d27f7",
+      "title_metadata": {
+        "title": "To Have and Have Not",
+        "original_title": "To Have and Have Not",
+        "year": "1944",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 68,
+      "excel_row": 70,
+      "initial_parquet_index": 13271,
+      "archive_file": "aclImdb/train/pos/892_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0098155/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0098155",
+      "title_snapshot": "Pedicab Driver (1989)",
+      "sentiment": "pozytywny",
+      "text_sha256": "e2d4fd953d536fe26cf66b3ca1520ee375307e5aaa0245dd05f9eb67825c9f52",
+      "title_metadata": {
+        "title": "Pedicab Driver",
+        "original_title": "Qun long xi feng",
+        "year": "1989",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 69,
+      "excel_row": 71,
+      "initial_parquet_index": 17813,
+      "archive_file": "aclImdb/train/pos/5310_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0126604/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0126604",
+      "title_snapshot": "Pecker (1998)",
+      "sentiment": "pozytywny",
+      "text_sha256": "ac2968fab94be93667162245fbfc430172404b044852dc3ce0515aa9d7762a0a",
+      "title_metadata": {
+        "title": "Pecker",
+        "original_title": "Pecker",
+        "year": "1998",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 70,
+      "excel_row": 72,
+      "initial_parquet_index": 4741,
+      "archive_file": "aclImdb/train/neg/4858_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0197116/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0197116",
+      "title_snapshot": "Zombie Bloodbath 3: Zombie Armageddon (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "75502ee9f2861a6005927b26ef3a37e079bde16db34d9b0cff8d7a5afe01eeb1",
+      "title_metadata": {
+        "title": "Zombie Bloodbath 3: Zombie Armageddon",
+        "original_title": "Zombie Bloodbath 3: Zombie Armageddon",
+        "year": "2000",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 71,
+      "excel_row": 73,
+      "initial_parquet_index": 5574,
+      "archive_file": "aclImdb/train/neg/5561_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0199650/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0199650",
+      "title_snapshot": "Jill Rips (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "848cbbe82e138889edd8fdcdc41743831cf7d90878c1777d89ad4d0c81ce5b40",
+      "title_metadata": {
+        "title": "Jill Rips",
+        "original_title": "Jill Rips",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 72,
+      "excel_row": 74,
+      "initial_parquet_index": 1654,
+      "archive_file": "aclImdb/train/neg/1545_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0213790/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0213790",
+      "title_snapshot": "The Ladies Man (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "7da0b77e181b7f3592915725c74685961457703039890e715c6dd110669c9b41",
+      "title_metadata": {
+        "title": "The Ladies Man",
+        "original_title": "The Ladies Man",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 73,
+      "excel_row": 75,
+      "initial_parquet_index": 22985,
+      "archive_file": "aclImdb/train/pos/10378_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0408154/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0408154",
+      "title_snapshot": "Roll (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "37fe5483d32cbc5643ce43f6794e6dfd91f03d29c3cd7d5e2c4051199b0267fe",
+      "title_metadata": {
+        "title": "Roll",
+        "original_title": "Roll",
+        "year": "2004",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 74,
+      "excel_row": 76,
+      "initial_parquet_index": 3814,
+      "archive_file": "aclImdb/train/neg/3737_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0090713/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0090713",
+      "title_snapshot": "The Best of Times (1986)",
+      "sentiment": "negatywny",
+      "text_sha256": "d005db890bfdba631e0de525652ea4c3ea9c606c674622ee879d8fc8b3d1a9c2",
+      "title_metadata": {
+        "title": "The Best of Times",
+        "original_title": "The Best of Times",
+        "year": "1986",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 75,
+      "excel_row": 77,
+      "initial_parquet_index": 17389,
+      "archive_file": "aclImdb/train/pos/4966_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0093181/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0093181",
+      "title_snapshot": "Hero: The Official Film of the 1986 FIFA World Cup (1986)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c94b5c26d90c2747c57d605c2bd8579c553d028d388621e6a7a5006af91e4266",
+      "title_metadata": {
+        "title": "Hero: The Official Film of the 1986 FIFA World Cup",
+        "original_title": "Hero: The Official Film of XIII World Cup",
+        "year": "1986",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 76,
+      "excel_row": 78,
+      "initial_parquet_index": 14332,
+      "archive_file": "aclImdb/train/pos/1879_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0082031/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0082031",
+      "title_snapshot": "Arthur (1981)",
+      "sentiment": "pozytywny",
+      "text_sha256": "f09e10d715bd399b9737041393b532eb10bfef8175c74714dece3a309098d6f0",
+      "title_metadata": {
+        "title": "Arthur",
+        "original_title": "Arthur",
+        "year": "1981",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 77,
+      "excel_row": 79,
+      "initial_parquet_index": 2615,
+      "archive_file": "aclImdb/train/neg/2632_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0443632/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0443632",
+      "title_snapshot": "The Sentinel (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "b20e0de770a466d7f2d681f36f827c4731cbbd27b380d14d8a99cf7092069f27",
+      "title_metadata": {
+        "title": "The Sentinel",
+        "original_title": "The Sentinel",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 78,
+      "excel_row": 80,
+      "initial_parquet_index": 17655,
+      "archive_file": "aclImdb/train/pos/5212_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0473356/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0473356",
+      "title_snapshot": "The Flock (2007)",
+      "sentiment": "pozytywny",
+      "text_sha256": "abd94fceb510e3d7965bb28d182d12608aca5a8328aa3645b5e07684772a7b52",
+      "title_metadata": {
+        "title": "The Flock",
+        "original_title": "The Flock",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 79,
+      "excel_row": 81,
+      "initial_parquet_index": 3582,
+      "archive_file": "aclImdb/train/neg/3457_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0189456/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0189456",
+      "title_snapshot": "Cut (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "0f6114f2d9bc5317f9f1b6d39bd1c5038a0cf8736be74ce360cfb57c0e5480b3",
+      "title_metadata": {
+        "title": "Cut",
+        "original_title": "Cut",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 80,
+      "excel_row": 82,
+      "initial_parquet_index": 8751,
+      "archive_file": "aclImdb/train/neg/8784_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0375210/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0375210",
+      "title_snapshot": "White Noise (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "5e2a8c70c8850fb254ace21bbe721e4d24010d3ae888787cfc98b35baeb82059",
+      "title_metadata": {
+        "title": "White Noise",
+        "original_title": "White Noise",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 81,
+      "excel_row": 83,
+      "initial_parquet_index": 12509,
+      "archive_file": "aclImdb/train/pos/118_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0101829/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0101829",
+      "title_snapshot": "Europa (1991)",
+      "sentiment": "pozytywny",
+      "text_sha256": "19af4ec551e740e51bbdf14f8c12cede707b09f215b2f8390487f9719b4cfcd6",
+      "title_metadata": {
+        "title": "Europa",
+        "original_title": "Europa",
+        "year": "1991",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 82,
+      "excel_row": 84,
+      "initial_parquet_index": 13584,
+      "archive_file": "aclImdb/train/pos/1091_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0040613/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0040613",
+      "title_snapshot": "Mr. Blandings Builds His Dream House (1948)",
+      "sentiment": "pozytywny",
+      "text_sha256": "f8c6a260067d021f7434dd48eb814fbc8633de254b3e4ca5baa9fa0c5a591cfe",
+      "title_metadata": {
+        "title": "Mr. Blandings Builds His Dream House",
+        "original_title": "Mr. Blandings Builds His Dream House",
+        "year": "1948",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 83,
+      "excel_row": 85,
+      "initial_parquet_index": 12432,
+      "archive_file": "aclImdb/train/neg/12483_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0087127/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0087127",
+      "title_snapshot": "Deathstalker (1983)",
+      "sentiment": "negatywny",
+      "text_sha256": "93b3b357b4f58a43046aae3587d7f5f2f85669fb546de15507e7e0f0e66fea6e",
+      "title_metadata": {
+        "title": "Deathstalker",
+        "original_title": "Deathstalker",
+        "year": "1983",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 84,
+      "excel_row": 86,
+      "initial_parquet_index": 13540,
+      "archive_file": "aclImdb/train/pos/1135_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0102951/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0102951",
+      "title_snapshot": "Soapdish (1991)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a516f13286dc065697eeefa0371eb238ef2f62d86ad49f9816c90ea863422959",
+      "title_metadata": {
+        "title": "Soapdish",
+        "original_title": "Soapdish",
+        "year": "1991",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 85,
+      "excel_row": 87,
+      "initial_parquet_index": 21564,
+      "archive_file": "aclImdb/train/pos/8983_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0388888/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0388888",
+      "title_snapshot": "Dig! (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "b0c5f9456362916a3179d97cd9183de0253fae6f9c9b3cbee033a3ad758812f0",
+      "title_metadata": {
+        "title": "Dig!",
+        "original_title": "Dig!",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 86,
+      "excel_row": 88,
+      "initial_parquet_index": 5881,
+      "archive_file": "aclImdb/train/neg/5766_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0807840/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0807840",
+      "title_snapshot": "Elephants Dream (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "fc7054991c2170da38d0929c7cd39df3a300b042e373848a413ed60330ab6cac",
+      "title_metadata": {
+        "title": "Elephants Dream",
+        "original_title": "Elephants Dream",
+        "year": "2006",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 87,
+      "excel_row": 89,
+      "initial_parquet_index": 10476,
+      "archive_file": "aclImdb/train/neg/10387_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0084096/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0084096",
+      "title_snapshot": "The House Where Evil Dwells (1982)",
+      "sentiment": "negatywny",
+      "text_sha256": "ce567c2969105b2736065e4fb70be37fc45adfde65dc7756c1ecf30f32f5394d",
+      "title_metadata": {
+        "title": "The House Where Evil Dwells",
+        "original_title": "The House Where Evil Dwells",
+        "year": "1982",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 88,
+      "excel_row": 90,
+      "initial_parquet_index": 15758,
+      "archive_file": "aclImdb/train/pos/3269_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0097044/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0097044",
+      "title_snapshot": "Chances Are (1989)",
+      "sentiment": "pozytywny",
+      "text_sha256": "6f14bc6727708f8da946634efb1c4a9dd2b02cfaa148be587740c2254d8d663a",
+      "title_metadata": {
+        "title": "Chances Are",
+        "original_title": "Chances Are",
+        "year": "1989",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 89,
+      "excel_row": 91,
+      "initial_parquet_index": 7573,
+      "archive_file": "aclImdb/train/neg/7658_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0369226/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0369226",
+      "title_snapshot": "Alone in the Dark (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "9e26d1e314302f6ba13477ab5d7a53b249dd146361e3d2cc2a2b62028f1eae0d",
+      "title_metadata": {
+        "title": "Alone in the Dark",
+        "original_title": "Alone in the Dark",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 90,
+      "excel_row": 92,
+      "initial_parquet_index": 14787,
+      "archive_file": "aclImdb/train/pos/2192_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0144024/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0144024",
+      "title_snapshot": "Out for Love, Be Back Shortly (1997)",
+      "sentiment": "pozytywny",
+      "text_sha256": "179e2e5e7f746bbd1ca99312776f54b131df24541006ff7bd258e9305f9e211a",
+      "title_metadata": {
+        "title": "Out for Love, Be Back Shortly",
+        "original_title": "Yatzati L'Hapes Ahavah - Techef Ashuv",
+        "year": "1997",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 91,
+      "excel_row": 93,
+      "initial_parquet_index": 16839,
+      "archive_file": "aclImdb/train/pos/1954_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0430912/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0430912",
+      "title_snapshot": "Basic Instinct 2 (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "3f7ce9dc7cb876c4eca6c03d912b60e50403135d76029096dad2cd9acc2552a6",
+      "title_metadata": {
+        "title": "Basic Instinct 2",
+        "original_title": "Basic Instinct 2",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 92,
+      "excel_row": 94,
+      "initial_parquet_index": 10647,
+      "archive_file": "aclImdb/train/neg/10728_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0445161/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0445161",
+      "title_snapshot": "4 (2004)",
+      "sentiment": "negatywny",
+      "text_sha256": "d484b939af29550b4f1a9abfb85595b5a5b495d07b58dc495d763263cfb9b877",
+      "title_metadata": {
+        "title": "4",
+        "original_title": "4",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 93,
+      "excel_row": 95,
+      "initial_parquet_index": 22313,
+      "archive_file": "aclImdb/train/pos/9770_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0114658/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0114658",
+      "title_snapshot": "Theodore Rex (1995)",
+      "sentiment": "pozytywny",
+      "text_sha256": "448b79c3c6b2b5cfb55034a09ffc746f325436ea82819e2cc34bb5148a37cccc",
+      "title_metadata": {
+        "title": "Theodore Rex",
+        "original_title": "Theodore Rex",
+        "year": "1995",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 94,
+      "excel_row": 96,
+      "initial_parquet_index": 14766,
+      "archive_file": "aclImdb/train/pos/2213_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0255730/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0255730",
+      "title_snapshot": "The Feast of All Saints (2001)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a20a14f3e3dda52e0484ad3c356b1e2c3cee19a77e3579bc147d9bc50b9dc6b9",
+      "title_metadata": {
+        "title": "The Feast of All Saints",
+        "original_title": "The Feast of All Saints",
+        "year": "2001",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 95,
+      "excel_row": 97,
+      "initial_parquet_index": 4333,
+      "archive_file": "aclImdb/train/neg/9773_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0097714/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0097714",
+      "title_snapshot": "Last Exit to Brooklyn (1989)",
+      "sentiment": "negatywny",
+      "text_sha256": "d72da3e3190347bda8dbe20a367a6d63b206f3a572f6e98b374601600d6beef1",
+      "title_metadata": {
+        "title": "Last Exit to Brooklyn",
+        "original_title": "Last Exit to Brooklyn",
+        "year": "1989",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 96,
+      "excel_row": 98,
+      "initial_parquet_index": 21337,
+      "archive_file": "aclImdb/train/pos/8954_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0051406/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0051406",
+      "title_snapshot": "Bell, Book and Candle (1958)",
+      "sentiment": "pozytywny",
+      "text_sha256": "39332c4a401ea0d6ed858e299c5ce2ff05b2cc8b7eb0bcb312755263e3a101e2",
+      "title_metadata": {
+        "title": "Bell, Book and Candle",
+        "original_title": "Bell, Book and Candle",
+        "year": "1958",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 97,
+      "excel_row": 99,
+      "initial_parquet_index": 19623,
+      "archive_file": "aclImdb/train/pos/7084_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0114746/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0114746",
+      "title_snapshot": "12 Monkeys (1995)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a452e5ec37dc0591090954b031bbd598c185b455ddbcbbe7cb5d64722b464636",
+      "title_metadata": {
+        "title": "12 Monkeys",
+        "original_title": "Twelve Monkeys",
+        "year": "1995",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 98,
+      "excel_row": 100,
+      "initial_parquet_index": 4010,
+      "archive_file": "aclImdb/train/neg/4053_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0063850/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0063850",
+      "title_snapshot": "If.... (1968)",
+      "sentiment": "negatywny",
+      "text_sha256": "1b518b11bcdaa3176ffbeb98a6cf3e4118de773925ec1754c8f5245c59050feb",
+      "title_metadata": {
+        "title": "If....",
+        "original_title": "If....",
+        "year": "1968",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 99,
+      "excel_row": 101,
+      "initial_parquet_index": 12135,
+      "archive_file": "aclImdb/train/neg/12056_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0790709/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0790709",
+      "title_snapshot": "Lovesickness (2007)",
+      "sentiment": "negatywny",
+      "text_sha256": "7e728099d86a18ab473003d22578007d013f345179544d972cb36b84f561cc05",
+      "title_metadata": {
+        "title": "Lovesickness",
+        "original_title": "Maldeamores",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 100,
+      "excel_row": 102,
+      "initial_parquet_index": 20701,
+      "archive_file": "aclImdb/train/pos/8310_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0228528/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0228528",
+      "title_snapshot": "Little Richard (2000)",
+      "sentiment": "pozytywny",
+      "text_sha256": "26d9cf9549034a069c2eff93477d487e0e65ba015250d2f76aab07d33ff95ffe",
+      "title_metadata": {
+        "title": "Little Richard",
+        "original_title": "Little Richard",
+        "year": "2000",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 101,
+      "excel_row": 103,
+      "initial_parquet_index": 750,
+      "archive_file": "aclImdb/train/neg/657_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0926129/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0926129",
+      "title_snapshot": "Prom Night (2008)",
+      "sentiment": "negatywny",
+      "text_sha256": "46f9a5dd5a4e4d43931535ef252cd1f4650981e564b9569325f52858d9f290e4",
+      "title_metadata": {
+        "title": "Prom Night",
+        "original_title": "Prom Night",
+        "year": "2008",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 102,
+      "excel_row": 104,
+      "initial_parquet_index": 5820,
+      "archive_file": "aclImdb/train/neg/5827_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0446685/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0446685",
+      "title_snapshot": "Drawing Restraint 9 (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "1e92e03a2d14f48d08a41f3894b56f028119f6602e4bb2042c9bcc528dc58bf4",
+      "title_metadata": {
+        "title": "Drawing Restraint 9",
+        "original_title": "Drawing Restraint 9",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 103,
+      "excel_row": 105,
+      "initial_parquet_index": 3657,
+      "archive_file": "aclImdb/train/neg/3638_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0094868/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0094868",
+      "title_snapshot": "Chocolat (1988)",
+      "sentiment": "negatywny",
+      "text_sha256": "05f50bb02e1a74f33643d5c23ceb1307c9e41dde9952489d61dec59b32c3b98f",
+      "title_metadata": {
+        "title": "Chocolat",
+        "original_title": "Chocolat",
+        "year": "1988",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 104,
+      "excel_row": 106,
+      "initial_parquet_index": 8935,
+      "archive_file": "aclImdb/train/neg/8856_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0089308/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0089308",
+      "title_snapshot": "Howling II: ... Your Sister Is a Werewolf (1985)",
+      "sentiment": "negatywny",
+      "text_sha256": "ad3a9a0ff5186213e439458cd8d4875967ad03d89f11424577ef86bc32fc79ca",
+      "title_metadata": {
+        "title": "Howling II: ... Your Sister Is a Werewolf",
+        "original_title": "Howling II: Stirba - Werewolf Bitch",
+        "year": "1985",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 105,
+      "excel_row": 107,
+      "initial_parquet_index": 10834,
+      "archive_file": "aclImdb/train/neg/10797_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0116756/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0116756",
+      "title_snapshot": "Kazaam (1996)",
+      "sentiment": "negatywny",
+      "text_sha256": "2d057013b9bbd0952c13d726e62e32d02f7415e0c5cfe9c6c98b0c2185ce0e96",
+      "title_metadata": {
+        "title": "Kazaam",
+        "original_title": "Kazaam",
+        "year": "1996",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 106,
+      "excel_row": 108,
+      "initial_parquet_index": 21625,
+      "archive_file": "aclImdb/train/pos/9178_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0085037/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0085037",
+      "title_snapshot": "Jane Eyre (1983)",
+      "sentiment": "pozytywny",
+      "text_sha256": "33a8dd8e736aeb4352550ba24a0cd9a4b837d2a56d190b9636920a4ee61b56e7",
+      "title_metadata": {
+        "title": "Jane Eyre",
+        "original_title": "Jane Eyre",
+        "year": "1983",
+        "title_type": "tvMiniSeries"
+      }
+    },
+    {
+      "row_index": 107,
+      "excel_row": 109,
+      "initial_parquet_index": 20168,
+      "archive_file": "aclImdb/train/pos/7563_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0475101/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0475101",
+      "title_snapshot": "The Making of 'Broken' (2005)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a7ddce8ea95a3f2c9668880745ec4d7b0a5211ec8df12f38673fa8a142d8746c",
+      "title_metadata": {
+        "title": "The Making of 'Broken'",
+        "original_title": "The Making of 'Broken'",
+        "year": "2005",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 108,
+      "excel_row": 110,
+      "initial_parquet_index": 1679,
+      "archive_file": "aclImdb/train/neg/1776_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0105428/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0105428",
+      "title_snapshot": "Sleepwalkers (1992)",
+      "sentiment": "negatywny",
+      "text_sha256": "7d5c77a732fb18579711fa299b1a9c48b7810659aaa6904ecc1fa964dcc4eb35",
+      "title_metadata": {
+        "title": "Sleepwalkers",
+        "original_title": "Sleepwalkers",
+        "year": "1992",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 109,
+      "excel_row": 111,
+      "initial_parquet_index": 21697,
+      "archive_file": "aclImdb/train/pos/9106_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0310001/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0310001",
+      "title_snapshot": "Stones (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "ef5314430f8d65b2ecb149cb16b9f9ab3fc52802aad47d17f489ec309aae24e0",
+      "title_metadata": {
+        "title": "Stones",
+        "original_title": "Piedras",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 110,
+      "excel_row": 112,
+      "initial_parquet_index": 1291,
+      "archive_file": "aclImdb/train/neg/1396_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0075781/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0075781",
+      "title_snapshot": "The Brain Machine (1972)",
+      "sentiment": "negatywny",
+      "text_sha256": "dd15491172785f2c35447c8f8248a727728dcb103b8867994ef547a284655530",
+      "title_metadata": {
+        "title": "The Brain Machine",
+        "original_title": "The Brain Machine",
+        "year": "1972",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 111,
+      "excel_row": 113,
+      "initial_parquet_index": 106,
+      "archive_file": "aclImdb/train/neg/21_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0479948/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0479948",
+      "title_snapshot": "Living & Dying (2007)",
+      "sentiment": "negatywny",
+      "text_sha256": "a6515f393fee29bab6a5b8a81716c8ed4c8234a707a7365e193b32cf86d9e8a4",
+      "title_metadata": {
+        "title": "Living & Dying",
+        "original_title": "Living & Dying",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 112,
+      "excel_row": 114,
+      "initial_parquet_index": 434,
+      "archive_file": "aclImdb/train/neg/461_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0893509/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0893509",
+      "title_snapshot": "Blonde and Blonder (2008)",
+      "sentiment": "negatywny",
+      "text_sha256": "73ded5c6a3074f473c4e58b487fae6d3f1731e10049bf2f4b24f1e7d7c3c4a72",
+      "title_metadata": {
+        "title": "Blonde and Blonder",
+        "original_title": "Blonde and Blonder",
+        "year": "2008",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 113,
+      "excel_row": 115,
+      "initial_parquet_index": 24882,
+      "archive_file": "aclImdb/train/pos/12321_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0093978/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0093978",
+      "title_snapshot": "A Chinese Ghost Story (1987)",
+      "sentiment": "pozytywny",
+      "text_sha256": "efb81d35f224b2109e194594e158d5e50cc05fa92bc073f818995f2e9df7f5a8",
+      "title_metadata": {
+        "title": "A Chinese Ghost Story",
+        "original_title": "Sien lui yau wan",
+        "year": "1987",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 114,
+      "excel_row": 116,
+      "initial_parquet_index": 22271,
+      "archive_file": "aclImdb/train/pos/9812_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0708787/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0708787",
+      "title_snapshot": "The Big Goodbye (1988)",
+      "sentiment": "pozytywny",
+      "text_sha256": "5ff8225c4858da5edb8c1ac29b7108cbdc221f7f55e482bfeed323b122595bef",
+      "title_metadata": {
+        "title": "The Big Goodbye",
+        "original_title": "The Big Goodbye",
+        "year": "1988",
+        "title_type": "tvEpisode"
+      }
+    },
+    {
+      "row_index": 115,
+      "excel_row": 117,
+      "initial_parquet_index": 23669,
+      "archive_file": "aclImdb/train/pos/11230_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0467491/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0467491",
+      "title_snapshot": "Star Trek: Hidden Frontier (2000)",
+      "sentiment": "pozytywny",
+      "text_sha256": "17155c0e23abe7afe7457a88a5a63efe410541cc1105eb04709b38529b5b2e03",
+      "title_metadata": {
+        "title": "Star Trek: Hidden Frontier",
+        "original_title": "Star Trek: Hidden Frontier",
+        "year": "2000",
+        "title_type": "tvSeries"
+      }
+    },
+    {
+      "row_index": 116,
+      "excel_row": 118,
+      "initial_parquet_index": 1139,
+      "archive_file": "aclImdb/train/neg/1036_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0245095/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0245095",
+      "title_snapshot": "The Enemy (2001)",
+      "sentiment": "negatywny",
+      "text_sha256": "3b7de76f7195e8e8bff47cf28fbcc2fff4772ac5690d8f782b445ce1473d3b13",
+      "title_metadata": {
+        "title": "The Enemy",
+        "original_title": "The Enemy",
+        "year": "2001",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 117,
+      "excel_row": 119,
+      "initial_parquet_index": 15983,
+      "archive_file": "aclImdb/train/pos/3556_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0048140/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0048140",
+      "title_snapshot": "Guys and Dolls (1955)",
+      "sentiment": "pozytywny",
+      "text_sha256": "9f0c6ed5757ca1b7a68e9099b809cdbcebe4e6164496d842468fa78be1d2f80f",
+      "title_metadata": {
+        "title": "Guys and Dolls",
+        "original_title": "Guys and Dolls",
+        "year": "1955",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 118,
+      "excel_row": 120,
+      "initial_parquet_index": 19519,
+      "archive_file": "aclImdb/train/pos/6932_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0043137/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0043137",
+      "title_snapshot": "Winchester '73 (1950)",
+      "sentiment": "pozytywny",
+      "text_sha256": "8f26232a58d60e89613cf4f04dbcc9b02d34e27543d56261f749798073c5ed9d",
+      "title_metadata": {
+        "title": "Winchester '73",
+        "original_title": "Winchester '73",
+        "year": "1950",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 119,
+      "excel_row": 121,
+      "initial_parquet_index": 3611,
+      "archive_file": "aclImdb/train/neg/3684_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0421239/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0421239",
+      "title_snapshot": "Red Eye (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "ac5f66bd92a330210be37361d5c81d556c2c3375a3af28d61bff65ad6392d9ad",
+      "title_metadata": {
+        "title": "Red Eye",
+        "original_title": "Red Eye",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 120,
+      "excel_row": 122,
+      "initial_parquet_index": 24705,
+      "archive_file": "aclImdb/train/pos/12242_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0082661/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0082661",
+      "title_snapshot": "Lili Marleen (1981)",
+      "sentiment": "pozytywny",
+      "text_sha256": "15f4bd32dcdcd7496698bbfcd22b1f13e4543b4cedfe76cb258da64c46863e30",
+      "title_metadata": {
+        "title": "Lili Marleen",
+        "original_title": "Lili Marleen",
+        "year": "1981",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 121,
+      "excel_row": 123,
+      "initial_parquet_index": 22077,
+      "archive_file": "aclImdb/train/pos/9494_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0088359/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0088359",
+      "title_snapshot": "White Fire (1984)",
+      "sentiment": "pozytywny",
+      "text_sha256": "9b4da73b9502339e3451d3d61752d5ca506a442141056b3c3892d8afc1634f97",
+      "title_metadata": {
+        "title": "White Fire",
+        "original_title": "Vivre pour survivre",
+        "year": "1984",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 122,
+      "excel_row": 124,
+      "initial_parquet_index": 15091,
+      "archive_file": "aclImdb/train/pos/2656_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0081505/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0081505",
+      "title_snapshot": "The Shining (1980)",
+      "sentiment": "pozytywny",
+      "text_sha256": "58d7511761b37f4bc9c2d974f2598da81f2bfb3a90c325c9f53151cb34967aa2",
+      "title_metadata": {
+        "title": "The Shining",
+        "original_title": "The Shining",
+        "year": "1980",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 123,
+      "excel_row": 125,
+      "initial_parquet_index": 3527,
+      "archive_file": "aclImdb/train/neg/3512_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0284978/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0284978",
+      "title_snapshot": "Cypher (2002)",
+      "sentiment": "negatywny",
+      "text_sha256": "0cbd112ab228628b7384d35ba75bed55ffbf946ca066823e127957b086cde3dd",
+      "title_metadata": {
+        "title": "Cypher",
+        "original_title": "Cypher",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 124,
+      "excel_row": 126,
+      "initial_parquet_index": 2803,
+      "archive_file": "aclImdb/train/neg/2700_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0113305/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0113305",
+      "title_snapshot": "Higher Learning (1995)",
+      "sentiment": "negatywny",
+      "text_sha256": "0866cce984e6435fb51a2152be4c5dbb2686e6f6a1f855855706f2912bb1f3e6",
+      "title_metadata": {
+        "title": "Higher Learning",
+        "original_title": "Higher Learning",
+        "year": "1995",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 125,
+      "excel_row": 127,
+      "initial_parquet_index": 12553,
+      "archive_file": "aclImdb/train/pos/74_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0047200/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0047200",
+      "title_snapshot": "The Mad Magician (1954)",
+      "sentiment": "pozytywny",
+      "text_sha256": "34e30f1f7f83c91b3c99f68d7ab3036f9fc0f0b5b6e92e2431077f4961cc241c",
+      "title_metadata": {
+        "title": "The Mad Magician",
+        "original_title": "The Mad Magician",
+        "year": "1954",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 126,
+      "excel_row": 128,
+      "initial_parquet_index": 2286,
+      "archive_file": "aclImdb/train/neg/2193_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0052646/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0052646",
+      "title_snapshot": "The Brain That Wouldn't Die (1962)",
+      "sentiment": "negatywny",
+      "text_sha256": "3aa0e6c88e3ad26e081e62d099f99becb0d0e1651a9b76a4f89bbf01c9213197",
+      "title_metadata": {
+        "title": "The Brain That Wouldn't Die",
+        "original_title": "The Brain That Wouldn't Die",
+        "year": "1962",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 127,
+      "excel_row": 129,
+      "initial_parquet_index": 3257,
+      "archive_file": "aclImdb/train/neg/3270_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0408154/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0408154",
+      "title_snapshot": "Roll (2004)",
+      "sentiment": "negatywny",
+      "text_sha256": "7223b8f677572b853d2106e64b1fe47b1734fc59e28c3a91579baecb021fe5d1",
+      "title_metadata": {
+        "title": "Roll",
+        "original_title": "Roll",
+        "year": "2004",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 128,
+      "excel_row": 130,
+      "initial_parquet_index": 1424,
+      "archive_file": "aclImdb/train/neg/1519_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0156789/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0156789",
+      "title_snapshot": "Men in White (1998)",
+      "sentiment": "negatywny",
+      "text_sha256": "b89cc53180dc6bfe873a2a492faa6db9fd5e811ed0c321c21f2310014cd76a2e",
+      "title_metadata": {
+        "title": "Men in White",
+        "original_title": "Men in White",
+        "year": "1998",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 129,
+      "excel_row": 131,
+      "initial_parquet_index": 23238,
+      "archive_file": "aclImdb/train/pos/10637_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0179841/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0179841",
+      "title_snapshot": "Harem Suare (1999)",
+      "sentiment": "pozytywny",
+      "text_sha256": "e8325cfff4d4a8f0f4df35de144dde193a4452cade6ba308cf5337baf340618d",
+      "title_metadata": {
+        "title": "Harem Suare",
+        "original_title": "Harem Suare",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 130,
+      "excel_row": 132,
+      "initial_parquet_index": 23716,
+      "archive_file": "aclImdb/train/pos/11183_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0098084/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0098084",
+      "title_snapshot": "Pet Sematary (1989)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c11d2727fcdef3cfe1dba15dc017b9e03bf73a02f3b03fc28631bd7aa488e5f3",
+      "title_metadata": {
+        "title": "Pet Sematary",
+        "original_title": "Pet Sematary",
+        "year": "1989",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 131,
+      "excel_row": 133,
+      "initial_parquet_index": 16815,
+      "archive_file": "aclImdb/train/pos/4260_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0292242/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0292242",
+      "title_snapshot": "Solino (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "19d78b6a7f80771e32a67abd7c078afa71499a06556cc4a1566f1297f5f18118",
+      "title_metadata": {
+        "title": "Solino",
+        "original_title": "Solino",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 132,
+      "excel_row": 134,
+      "initial_parquet_index": 1169,
+      "archive_file": "aclImdb/train/neg/1262_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0107979/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0107979",
+      "title_snapshot": "Robot Wars (1993)",
+      "sentiment": "negatywny",
+      "text_sha256": "1bc1817ba4a2f57e3b727b8d11f2a5d84982dd2f99c2364090a242df610601bf",
+      "title_metadata": {
+        "title": "Robot Wars",
+        "original_title": "Robot Wars",
+        "year": "1993",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 133,
+      "excel_row": 135,
+      "initial_parquet_index": 17668,
+      "archive_file": "aclImdb/train/pos/5199_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0074653/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0074653",
+      "title_snapshot": "The Human Tornado (1976)",
+      "sentiment": "pozytywny",
+      "text_sha256": "410c13b0d114442cf897335fe7e96da7293f4ee510a640d70943f37cf7b09960",
+      "title_metadata": {
+        "title": "The Human Tornado",
+        "original_title": "The Human Tornado",
+        "year": "1976",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 134,
+      "excel_row": 136,
+      "initial_parquet_index": 24983,
+      "archive_file": "aclImdb/train/pos/12432_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0347591/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0347591",
+      "title_snapshot": "My Name Is Modesty: A Modesty Blaise Adventure (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "1aa2f262fee55e8140f461244985792c7584f7c098c232d99971450e4e401080",
+      "title_metadata": {
+        "title": "My Name Is Modesty: A Modesty Blaise Adventure",
+        "original_title": "My Name Is Modesty: A Modesty Blaise Adventure",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 135,
+      "excel_row": 137,
+      "initial_parquet_index": 9195,
+      "archive_file": "aclImdb/train/neg/9108_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0196267/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0196267",
+      "title_snapshot": "Cruel Intentions 2 (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "2d51a3bb81f2a5808c292643e32d13716402e523479a6cc5a323ac67516d3255",
+      "title_metadata": {
+        "title": "Cruel Intentions 2",
+        "original_title": "Cruel Intentions 2",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 136,
+      "excel_row": 138,
+      "initial_parquet_index": 1584,
+      "archive_file": "aclImdb/train/neg/1615_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0374569/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0374569",
+      "title_snapshot": "Che: Part Two (2008)",
+      "sentiment": "negatywny",
+      "text_sha256": "28043763cfa1a239d2dbbdae0b5c2f6c7e8573a153546ff55ff2f4f9185d1e0a",
+      "title_metadata": {
+        "title": "Che: Part Two",
+        "original_title": "Che: Part Two",
+        "year": "2008",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 137,
+      "excel_row": 139,
+      "initial_parquet_index": 16098,
+      "archive_file": "aclImdb/train/pos/3697_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0471930/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0471930",
+      "title_snapshot": "Who Loves the Sun (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "0e1cce27b3f6738d6bbb6caeeb37452c0fef0d82202698b947df2bb11bcaf9f5",
+      "title_metadata": {
+        "title": "Who Loves the Sun",
+        "original_title": "Who Loves the Sun",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 138,
+      "excel_row": 140,
+      "initial_parquet_index": 14243,
+      "archive_file": "aclImdb/train/pos/1712_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0831840/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0831840",
+      "title_snapshot": "Ahista Ahista (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "f7987f826c0cbc0a1d2ef29e47410c50130cdc6a4586cfcf8251f83c8035e0c7",
+      "title_metadata": {
+        "title": "Ahista Ahista",
+        "original_title": "Ahista Ahista",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 139,
+      "excel_row": 141,
+      "initial_parquet_index": 10299,
+      "archive_file": "aclImdb/train/neg/10308_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0103907/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0103907",
+      "title_snapshot": "CIA Code Name: Alexa (1992)",
+      "sentiment": "negatywny",
+      "text_sha256": "9cfc950de99143c85c7e7f37f1aa1ad24ee1f3d99f625ad4299bfdeea4208140",
+      "title_metadata": {
+        "title": "CIA Code Name: Alexa",
+        "original_title": "CIA Code Name: Alexa",
+        "year": "1992",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 140,
+      "excel_row": 142,
+      "initial_parquet_index": 22744,
+      "archive_file": "aclImdb/train/pos/10363_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0094924/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0094924",
+      "title_snapshot": "A Cry in the Dark (1988)",
+      "sentiment": "pozytywny",
+      "text_sha256": "e08c5c79f7dc4643d20fc40305dee2e45fc5a2443e3603316b209bc3888f8f8e",
+      "title_metadata": {
+        "title": "A Cry in the Dark",
+        "original_title": "Evil Angels",
+        "year": "1988",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 141,
+      "excel_row": 143,
+      "initial_parquet_index": 9654,
+      "archive_file": "aclImdb/train/neg/9673_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0105347/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0105347",
+      "title_snapshot": "Seedpeople (1992)",
+      "sentiment": "negatywny",
+      "text_sha256": "3c91618ac45b28f8759039041319198f83edd4b26613938d570edacc0e4d6347",
+      "title_metadata": {
+        "title": "Seedpeople",
+        "original_title": "Seedpeople",
+        "year": "1992",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 142,
+      "excel_row": 144,
+      "initial_parquet_index": 24330,
+      "archive_file": "aclImdb/train/pos/11849_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0166813/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0166813",
+      "title_snapshot": "Spirit: Stallion of the Cimarron (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "29737cd03c706dd8a1c62d29cee5059cbc214773dba47a58f8a69b7c6b0a168b",
+      "title_metadata": {
+        "title": "Spirit: Stallion of the Cimarron",
+        "original_title": "Spirit: Stallion of the Cimarron",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 143,
+      "excel_row": 145,
+      "initial_parquet_index": 24291,
+      "archive_file": "aclImdb/train/pos/11888_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0346039/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0346039",
+      "title_snapshot": "Close to Leo (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a9a471fbe32786a54076bbdf9221fea7e1221a2ce0fcb80b2efc76ccf0de201d",
+      "title_metadata": {
+        "title": "Close to Leo",
+        "original_title": "Tout contre Léo",
+        "year": "2002",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 144,
+      "excel_row": 146,
+      "initial_parquet_index": 24992,
+      "archive_file": "aclImdb/train/pos/12423_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0119906/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0119906",
+      "title_snapshot": "Playing God (1997)",
+      "sentiment": "pozytywny",
+      "text_sha256": "f32a618f26c25e34577c5d2cac091382bf47712fe7dbfb897e007100e0173512",
+      "title_metadata": {
+        "title": "Playing God",
+        "original_title": "Playing God",
+        "year": "1997",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 145,
+      "excel_row": 147,
+      "initial_parquet_index": 3733,
+      "archive_file": "aclImdb/train/neg/3818_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0092359/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0092359",
+      "title_snapshot": "Full House (1987)",
+      "sentiment": "negatywny",
+      "text_sha256": "ed997ab62e2283194dc93a0cd459703b95e4e91f3c1c06b4a33f98640ffcee9f",
+      "title_metadata": {
+        "title": "Full House",
+        "original_title": "Full House",
+        "year": "1987",
+        "title_type": "tvSeries"
+      }
+    },
+    {
+      "row_index": 146,
+      "excel_row": 148,
+      "initial_parquet_index": 9044,
+      "archive_file": "aclImdb/train/neg/9003_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0312640/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0312640",
+      "title_snapshot": "Dragon Fighter (2003)",
+      "sentiment": "negatywny",
+      "text_sha256": "3b9b887a560dc651f2b495aa54b34c93b25302d4f7a85a3e99fabf8a09167c47",
+      "title_metadata": {
+        "title": "Dragon Fighter",
+        "original_title": "Dragon Fighter",
+        "year": "2003",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 147,
+      "excel_row": 149,
+      "initial_parquet_index": 16804,
+      "archive_file": "aclImdb/train/pos/4271_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0076276/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0076276",
+      "title_snapshot": "Who's Singin' Over There? (1980)",
+      "sentiment": "pozytywny",
+      "text_sha256": "b741655af11282b4e99c8b6bd9e90b7ae3ac856bdf5a20d2cef2649ebe14a81d",
+      "title_metadata": {
+        "title": "Who's Singin' Over There?",
+        "original_title": "Ko to tamo peva",
+        "year": "1980",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 148,
+      "excel_row": 150,
+      "initial_parquet_index": 18752,
+      "archive_file": "aclImdb/train/pos/6163_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0066817/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0066817",
+      "title_snapshot": "Bedknobs and Broomsticks (1971)",
+      "sentiment": "pozytywny",
+      "text_sha256": "3ebc740ff2d4ad782facb59b3bcbcd21e24fbb537b4e84777b5cd496f232e843",
+      "title_metadata": {
+        "title": "Bedknobs and Broomsticks",
+        "original_title": "Bedknobs and Broomsticks",
+        "year": "1971",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 149,
+      "excel_row": 151,
+      "initial_parquet_index": 3432,
+      "archive_file": "aclImdb/train/neg/3351_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0171363/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0171363",
+      "title_snapshot": "The Haunting (1999)",
+      "sentiment": "negatywny",
+      "text_sha256": "3747eed9cdcf0e268cd6f5aebbacc4b709f003e2eee58ba7ca662dda51214d65",
+      "title_metadata": {
+        "title": "The Haunting",
+        "original_title": "The Haunting",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 150,
+      "excel_row": 152,
+      "initial_parquet_index": 12066,
+      "archive_file": "aclImdb/train/neg/12125_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0120613/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0120613",
+      "title_snapshot": "A Walk on the Moon (1999)",
+      "sentiment": "negatywny",
+      "text_sha256": "011fed687c64ea06d0b245cc6c1ffb2f967b1d29a97fa3ffeb45ce52013f7a20",
+      "title_metadata": {
+        "title": "A Walk on the Moon",
+        "original_title": "A Walk on the Moon",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 151,
+      "excel_row": 153,
+      "initial_parquet_index": 18626,
+      "archive_file": "aclImdb/train/pos/6033_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0433407/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0433407",
+      "title_snapshot": "Less Like Me (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "5c62e928e1cd168f809480332c555b10e2a4c2eefdfa49749058a9d1d12f8771",
+      "title_metadata": {
+        "title": "Less Like Me",
+        "original_title": "Less Like Me",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 152,
+      "excel_row": 154,
+      "initial_parquet_index": 16619,
+      "archive_file": "aclImdb/train/pos/4200_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0046187/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0046187",
+      "title_snapshot": "Pickup on South Street (1953)",
+      "sentiment": "pozytywny",
+      "text_sha256": "fec651db980d36ed787818676831d5b4ca255567adb4034c1b84b3594eae3836",
+      "title_metadata": {
+        "title": "Pickup on South Street",
+        "original_title": "Pickup on South Street",
+        "year": "1953",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 153,
+      "excel_row": 155,
+      "initial_parquet_index": 6912,
+      "archive_file": "aclImdb/train/neg/7039_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0096310/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0096310",
+      "title_snapshot": "Troma's War (1988)",
+      "sentiment": "negatywny",
+      "text_sha256": "42bf92402be294523cb1c0a0f3fab296e13e5da6c1d8c2e211fe68186e4e405f",
+      "title_metadata": {
+        "title": "Troma's War",
+        "original_title": "Troma's War",
+        "year": "1988",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 154,
+      "excel_row": 156,
+      "initial_parquet_index": 1535,
+      "archive_file": "aclImdb/train/neg/1408_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0479519/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0479519",
+      "title_snapshot": "Promise Me This (2007)",
+      "sentiment": "negatywny",
+      "text_sha256": "d4187feec9ad1f1110f0e2c35e1cb592c16b0e1941a21cbc8badaf607ff006bd",
+      "title_metadata": {
+        "title": "Promise Me This",
+        "original_title": "Zavet",
+        "year": "2007",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 155,
+      "excel_row": 157,
+      "initial_parquet_index": 1824,
+      "archive_file": "aclImdb/train/neg/1887_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0290661/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0290661",
+      "title_snapshot": "Dog Days (2001)",
+      "sentiment": "negatywny",
+      "text_sha256": "4b04849b96768e21360d38964c50f413e2536c1bd1609803821d23610f04ad49",
+      "title_metadata": {
+        "title": "Dog Days",
+        "original_title": "Hundstage",
+        "year": "2001",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 156,
+      "excel_row": 158,
+      "initial_parquet_index": 8785,
+      "archive_file": "aclImdb/train/neg/8750_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0104503/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0104503",
+      "title_snapshot": "In the Soup (1992)",
+      "sentiment": "negatywny",
+      "text_sha256": "6f5f450d1872324b887abfe8c2aff29d496f4866741c3869a819220195ca4461",
+      "title_metadata": {
+        "title": "In the Soup",
+        "original_title": "In the Soup",
+        "year": "1992",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 157,
+      "excel_row": 159,
+      "initial_parquet_index": 12688,
+      "archive_file": "aclImdb/train/pos/195_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0019379/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0019379",
+      "title_snapshot": "Show People (1928)",
+      "sentiment": "pozytywny",
+      "text_sha256": "7d765ad6202dedf32c31ccf1203ab8b0f734966c19270887099c2c17a1713ed1",
+      "title_metadata": {
+        "title": "Show People",
+        "original_title": "Show People",
+        "year": "1928",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 158,
+      "excel_row": 160,
+      "initial_parquet_index": 6201,
+      "archive_file": "aclImdb/train/neg/6214_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0472033/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0472033",
+      "title_snapshot": "9 (2009)",
+      "sentiment": "negatywny",
+      "text_sha256": "d07f21881fb4b72ecf6954c5e9fc0198081df01bd3cb11dfbbdf63cb39d87d84",
+      "title_metadata": {
+        "title": "9",
+        "original_title": "9",
+        "year": "2009",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 159,
+      "excel_row": 161,
+      "initial_parquet_index": 20585,
+      "archive_file": "aclImdb/train/pos/8170_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0116075/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0116075",
+      "title_snapshot": "The Dentist (1996)",
+      "sentiment": "pozytywny",
+      "text_sha256": "35ca1a8f8bcdbfc370e6e7c203e408e5458c2344f5067005ca47d48f8c0b2981",
+      "title_metadata": {
+        "title": "The Dentist",
+        "original_title": "The Dentist",
+        "year": "1996",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 160,
+      "excel_row": 162,
+      "initial_parquet_index": 19416,
+      "archive_file": "aclImdb/train/pos/3756_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0048295/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0048295",
+      "title_snapshot": "The Last Ten Days (1955)",
+      "sentiment": "pozytywny",
+      "text_sha256": "137d18a35e56ca09a385a482b00f0f3946cfec928cf500002b8f94662b03afea",
+      "title_metadata": {
+        "title": "The Last Ten Days",
+        "original_title": "Der letzte Akt",
+        "year": "1955",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 161,
+      "excel_row": 163,
+      "initial_parquet_index": 4012,
+      "archive_file": "aclImdb/train/neg/4051_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0063850/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0063850",
+      "title_snapshot": "If.... (1968)",
+      "sentiment": "negatywny",
+      "text_sha256": "02f4b36162198fae2a2e249222650f937e684c636ba585bda47460022e2e5e54",
+      "title_metadata": {
+        "title": "If....",
+        "original_title": "If....",
+        "year": "1968",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 162,
+      "excel_row": 164,
+      "initial_parquet_index": 4374,
+      "archive_file": "aclImdb/train/neg/4457_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0385002/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0385002",
+      "title_snapshot": "Green Street Hooligans (2005)",
+      "sentiment": "negatywny",
+      "text_sha256": "b6347f11f2155d0dfc17a81c2e287d52892667a7b45b1ab337a9b972644354d0",
+      "title_metadata": {
+        "title": "Green Street Hooligans",
+        "original_title": "Green Street",
+        "year": "2005",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 163,
+      "excel_row": 165,
+      "initial_parquet_index": 520,
+      "archive_file": "aclImdb/train/neg/2844_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0024130/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0024130",
+      "title_snapshot": "Hold Your Man (1933)",
+      "sentiment": "negatywny",
+      "text_sha256": "ffc9c9ede151734d27b3e22bc8d38a9aff353bf73d93e446fc06ace681da07e6",
+      "title_metadata": {
+        "title": "Hold Your Man",
+        "original_title": "Hold Your Man",
+        "year": "1933",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 164,
+      "excel_row": 166,
+      "initial_parquet_index": 2045,
+      "archive_file": "aclImdb/train/neg/1922_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0117179/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0117179",
+      "title_snapshot": "Night of the Twisters (1996)",
+      "sentiment": "negatywny",
+      "text_sha256": "52b06214f7ff7f25100cf80a02ad1695b10e36769f2e872a5665f765024db68a",
+      "title_metadata": {
+        "title": "Night of the Twisters",
+        "original_title": "Night of the Twisters",
+        "year": "1996",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 165,
+      "excel_row": 167,
+      "initial_parquet_index": 10133,
+      "archive_file": "aclImdb/train/neg/10218_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0066390/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0066390",
+      "title_snapshot": "Soldier Blue (1970)",
+      "sentiment": "negatywny",
+      "text_sha256": "629e9c27ba2be676bcdbbb9bcb5227e9a4e6ceb081d99760d491c0f58ff603ef",
+      "title_metadata": {
+        "title": "Soldier Blue",
+        "original_title": "Soldier Blue",
+        "year": "1970",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 166,
+      "excel_row": 168,
+      "initial_parquet_index": 6873,
+      "archive_file": "aclImdb/train/neg/6822_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0095895/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0095895",
+      "title_snapshot": "Powaqqatsi (1988)",
+      "sentiment": "negatywny",
+      "text_sha256": "147cd385dff59c50aae44b398c9c73a7ff75d112ee7ebe45d19fd27af825ca61",
+      "title_metadata": {
+        "title": "Powaqqatsi",
+        "original_title": "Powaqqatsi",
+        "year": "1988",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 167,
+      "excel_row": 169,
+      "initial_parquet_index": 21792,
+      "archive_file": "aclImdb/train/pos/9267_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0499537/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0499537",
+      "title_snapshot": "Offside (2006)",
+      "sentiment": "pozytywny",
+      "text_sha256": "4c9f1e866437f868f1f75895034652fa814693d1b9b236389850bf4487b29ed2",
+      "title_metadata": {
+        "title": "Offside",
+        "original_title": "Afsaid",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 168,
+      "excel_row": 170,
+      "initial_parquet_index": 24739,
+      "archive_file": "aclImdb/train/pos/12208_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0040525/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0040525",
+      "title_snapshot": "The Lady from Shanghai (1947)",
+      "sentiment": "pozytywny",
+      "text_sha256": "ee8b0ef627f0c7a1d6e2bb82fc34b7f06480f3a1e7758c7bb82418f593d60e5e",
+      "title_metadata": {
+        "title": "The Lady from Shanghai",
+        "original_title": "The Lady from Shanghai",
+        "year": "1947",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 169,
+      "excel_row": 171,
+      "initial_parquet_index": 16886,
+      "archive_file": "aclImdb/train/pos/4445_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0045492/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0045492",
+      "title_snapshot": "All I Desire (1953)",
+      "sentiment": "pozytywny",
+      "text_sha256": "93dceb190e39915ab7466d503fb28017e7fb602845897b6323533152d934755b",
+      "title_metadata": {
+        "title": "All I Desire",
+        "original_title": "All I Desire",
+        "year": "1953",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 170,
+      "excel_row": 172,
+      "initial_parquet_index": 11946,
+      "archive_file": "aclImdb/train/neg/11989_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0099327/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0099327",
+      "title_snapshot": "A Cry in the Wild (1990)",
+      "sentiment": "negatywny",
+      "text_sha256": "d2398a86363e7e1b26f603ec3062aabd9c43b26e00c6eec3efd3ee4b435813ab",
+      "title_metadata": {
+        "title": "A Cry in the Wild",
+        "original_title": "A Cry in the Wild",
+        "year": "1990",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 171,
+      "excel_row": 173,
+      "initial_parquet_index": 24802,
+      "archive_file": "aclImdb/train/pos/11520_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0188045/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0188045",
+      "title_snapshot": "Magicians (2000)",
+      "sentiment": "pozytywny",
+      "text_sha256": "8edcb259572d0411c43973f4bc6cb0b1b9d8f7a5c92775105a8964bceb42ad75",
+      "title_metadata": {
+        "title": "Magicians",
+        "original_title": "Magicians",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 172,
+      "excel_row": 174,
+      "initial_parquet_index": 17308,
+      "archive_file": "aclImdb/train/pos/4791_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0166896/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0166896",
+      "title_snapshot": "The Straight Story (1999)",
+      "sentiment": "pozytywny",
+      "text_sha256": "045221b29eb42b0a2e213cadbdb888508429cb696f0655755b2404b220a0ecd2",
+      "title_metadata": {
+        "title": "The Straight Story",
+        "original_title": "The Straight Story",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 173,
+      "excel_row": 175,
+      "initial_parquet_index": 23774,
+      "archive_file": "aclImdb/train/pos/11381_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0043278/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0043278",
+      "title_snapshot": "An American in Paris (1951)",
+      "sentiment": "pozytywny",
+      "text_sha256": "ee400e19da2600c5a06ee30e74cb43b29a1892e4dfe910a6ffc83481e301b58e",
+      "title_metadata": {
+        "title": "An American in Paris",
+        "original_title": "An American in Paris",
+        "year": "1951",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 174,
+      "excel_row": 176,
+      "initial_parquet_index": 10415,
+      "archive_file": "aclImdb/train/neg/10448_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0417148/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0417148",
+      "title_snapshot": "Snakes on a Plane (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "f1e4548b2b0208c1d332dcb67dbe2c34babe104bdfea38bcaf749e0475bec855",
+      "title_metadata": {
+        "title": "Snakes on a Plane",
+        "original_title": "Snakes on a Plane",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 175,
+      "excel_row": 177,
+      "initial_parquet_index": 9891,
+      "archive_file": "aclImdb/train/neg/9948_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0111323/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0111323",
+      "title_snapshot": "Surviving the Game (1994)",
+      "sentiment": "negatywny",
+      "text_sha256": "1387959c157d75001b68c70561120a916cbfebc983d370674f1a651cd260c26f",
+      "title_metadata": {
+        "title": "Surviving the Game",
+        "original_title": "Surviving the Game",
+        "year": "1994",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 176,
+      "excel_row": 178,
+      "initial_parquet_index": 16093,
+      "archive_file": "aclImdb/train/pos/3702_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0124394/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0124394",
+      "title_snapshot": "The Dinner Party (1994)",
+      "sentiment": "pozytywny",
+      "text_sha256": "a053bd9e1c79222bac5610af92eccb7717cb396f031db6478f6be549e9997892",
+      "title_metadata": {
+        "title": "The Dinner Party",
+        "original_title": "The Dinner Party",
+        "year": "1994",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 177,
+      "excel_row": 179,
+      "initial_parquet_index": 11955,
+      "archive_file": "aclImdb/train/neg/11980_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0264060/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0264060",
+      "title_snapshot": "Survivor Series (1990)",
+      "sentiment": "negatywny",
+      "text_sha256": "e1fcd77f24348179dbaec7bf673b93e97f73ed02a1f79ee6db6b0e9506fdd4a4",
+      "title_metadata": {
+        "title": "Survivor Series",
+        "original_title": "WWF Survivor Series",
+        "year": "1990",
+        "title_type": "tvSpecial"
+      }
+    },
+    {
+      "row_index": 178,
+      "excel_row": 180,
+      "initial_parquet_index": 16252,
+      "archive_file": "aclImdb/train/pos/11380_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0043278/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0043278",
+      "title_snapshot": "An American in Paris (1951)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c903070224be02ab1d56f1462b0010d2b71811eef5ff92895589598ccf3efd42",
+      "title_metadata": {
+        "title": "An American in Paris",
+        "original_title": "An American in Paris",
+        "year": "1951",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 179,
+      "excel_row": 181,
+      "initial_parquet_index": 22263,
+      "archive_file": "aclImdb/train/pos/9820_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0070497/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0070497",
+      "title_snapshot": "Outrage (1973)",
+      "sentiment": "pozytywny",
+      "text_sha256": "55f794472a7c3160b87e74c4df1c9315c55e713e348b7e34245e27a7f5d76517",
+      "title_metadata": {
+        "title": "Outrage",
+        "original_title": "Outrage",
+        "year": "1973",
+        "title_type": "tvMovie"
+      }
+    },
+    {
+      "row_index": 180,
+      "excel_row": 182,
+      "initial_parquet_index": 22060,
+      "archive_file": "aclImdb/train/pos/9511_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0257044/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0257044",
+      "title_snapshot": "Road to Perdition (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "7c570c2036df1e8b57c3bd8d1c5e8fbfa19b05b29768066710b641557a926bae",
+      "title_metadata": {
+        "title": "Road to Perdition",
+        "original_title": "Road to Perdition",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 181,
+      "excel_row": 183,
+      "initial_parquet_index": 11543,
+      "archive_file": "aclImdb/train/neg/11624_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0073205/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0073205",
+      "title_snapshot": "Wanted: Babysitter (1975)",
+      "sentiment": "negatywny",
+      "text_sha256": "480d65690e072bbb692d5a1160459e8958c12bd8c464f7c08fb539235249c1f9",
+      "title_metadata": {
+        "title": "Wanted: Babysitter",
+        "original_title": "La baby sitter",
+        "year": "1975",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 182,
+      "excel_row": 184,
+      "initial_parquet_index": 2547,
+      "archive_file": "aclImdb/train/neg/2444_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0104515/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0104515",
+      "title_snapshot": "Intensive Care (1991)",
+      "sentiment": "negatywny",
+      "text_sha256": "49a8de7fbeccee850c378a940ed1d619fad78012494f08675af18409ad6c6eb0",
+      "title_metadata": {
+        "title": "Intensive Care",
+        "original_title": "Intensive Care",
+        "year": "1991",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 183,
+      "excel_row": 185,
+      "initial_parquet_index": 20848,
+      "archive_file": "aclImdb/train/pos/8419_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0019071/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0019071",
+      "title_snapshot": "The Last Command (1928)",
+      "sentiment": "pozytywny",
+      "text_sha256": "db2ae4f37f2ca0c58235235d0851e5619c60e8e4370f12f3ffaf765459e29ec4",
+      "title_metadata": {
+        "title": "The Last Command",
+        "original_title": "The Last Command",
+        "year": "1928",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 184,
+      "excel_row": 186,
+      "initial_parquet_index": 18982,
+      "archive_file": "aclImdb/train/pos/6445_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0382330/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0382330",
+      "title_snapshot": "As It Is in Heaven (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "2364507e202c19303735844e16d70da51e63af39dedc4ae732b75e650b3d4032",
+      "title_metadata": {
+        "title": "As It Is in Heaven",
+        "original_title": "Så som i himmelen",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 185,
+      "excel_row": 187,
+      "initial_parquet_index": 23001,
+      "archive_file": "aclImdb/train/pos/10618_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0083261/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0083261",
+      "title_snapshot": "The Unseen (1980)",
+      "sentiment": "pozytywny",
+      "text_sha256": "b6098c13f342fad5ed625a1d46e916f5907038b8a00f71a77ebdf4bfc5a7ccbb",
+      "title_metadata": {
+        "title": "The Unseen",
+        "original_title": "The Unseen",
+        "year": "1980",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 186,
+      "excel_row": 188,
+      "initial_parquet_index": 15146,
+      "archive_file": "aclImdb/train/pos/2601_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0081878/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0081878",
+      "title_snapshot": "It Ain't Half Hot Mum (1974)",
+      "sentiment": "pozytywny",
+      "text_sha256": "64b4645183ddd32e1b86a808c903f87e73838a90b8d26dd92728939881280f71",
+      "title_metadata": {
+        "title": "It Ain't Half Hot Mum",
+        "original_title": "It Ain't Half Hot Mum",
+        "year": "1974",
+        "title_type": "tvSeries"
+      }
+    },
+    {
+      "row_index": 187,
+      "excel_row": 189,
+      "initial_parquet_index": 7359,
+      "archive_file": "aclImdb/train/neg/7360_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0300470/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0300470",
+      "title_snapshot": "Shakedown (2002)",
+      "sentiment": "negatywny",
+      "text_sha256": "0c3ca1ab82a90b32792f40e8ea76b0b2de374d05c1ddee1f0b91fe982c5cf56d",
+      "title_metadata": {
+        "title": "Shakedown",
+        "original_title": "Shakedown",
+        "year": "2002",
+        "title_type": "video"
+      }
+    },
+    {
+      "row_index": 188,
+      "excel_row": 190,
+      "initial_parquet_index": 19043,
+      "archive_file": "aclImdb/train/pos/6640_8.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0000010/usercomments",
+      "original_score": 8,
+      "id_imdb": "tt0000010",
+      "title_snapshot": "Leaving the Factory (1895)",
+      "sentiment": "pozytywny",
+      "text_sha256": "0fb1af7ee706927f1341e084314e7816ab9ccb12874b908fe5abad6073d86e84",
+      "title_metadata": {
+        "title": "Leaving the Factory",
+        "original_title": "La sortie de l'usine Lumière à Lyon",
+        "year": "1895",
+        "title_type": "short"
+      }
+    },
+    {
+      "row_index": 189,
+      "excel_row": 191,
+      "initial_parquet_index": 488,
+      "archive_file": "aclImdb/train/neg/407_4.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0164052/usercomments",
+      "original_score": 4,
+      "id_imdb": "tt0164052",
+      "title_snapshot": "Hollow Man (2000)",
+      "sentiment": "negatywny",
+      "text_sha256": "df645433355e6fe5cfa17a11e645910476556ff05028f838aa9f9b820c523269",
+      "title_metadata": {
+        "title": "Hollow Man",
+        "original_title": "Hollow Man",
+        "year": "2000",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 190,
+      "excel_row": 192,
+      "initial_parquet_index": 14840,
+      "archive_file": "aclImdb/train/pos/2395_7.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0159542/usercomments",
+      "original_score": 7,
+      "id_imdb": "tt0159542",
+      "title_snapshot": "Macbeth in Manhattan (1999)",
+      "sentiment": "pozytywny",
+      "text_sha256": "2927c3d3ad367ad169ba2fbba81c18be7e46a3e3dad069bc50e0727781ad09fa",
+      "title_metadata": {
+        "title": "Macbeth in Manhattan",
+        "original_title": "Macbeth in Manhattan",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 191,
+      "excel_row": 193,
+      "initial_parquet_index": 22477,
+      "archive_file": "aclImdb/train/pos/9862_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0268380/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0268380",
+      "title_snapshot": "Ice Age (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "c547047b0d15da5dfa96204d7bb263ee571e49f9c40dc4172d23ddea7f04b8a6",
+      "title_metadata": {
+        "title": "Ice Age",
+        "original_title": "Ice Age",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 192,
+      "excel_row": 194,
+      "initial_parquet_index": 8279,
+      "archive_file": "aclImdb/train/neg/8232_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0888019/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0888019",
+      "title_snapshot": "Five Across the Eyes (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "a63a0225d8c19d64725ee80125c53f433ef69596042b6ad858957f474e64b5b3",
+      "title_metadata": {
+        "title": "Five Across the Eyes",
+        "original_title": "Five Across the Eyes",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 193,
+      "excel_row": 195,
+      "initial_parquet_index": 3811,
+      "archive_file": "aclImdb/train/neg/3740_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0175877/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0175877",
+      "title_snapshot": "Made Men (1999)",
+      "sentiment": "negatywny",
+      "text_sha256": "449c9e19daa085662aeba9f302fad11857a780977dddd4f6396429fa6093fb2e",
+      "title_metadata": {
+        "title": "Made Men",
+        "original_title": "Made Men",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 194,
+      "excel_row": 196,
+      "initial_parquet_index": 14296,
+      "archive_file": "aclImdb/train/pos/43_10.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0264689/usercomments",
+      "original_score": 10,
+      "id_imdb": "tt0264689",
+      "title_snapshot": "Home Room (2002)",
+      "sentiment": "pozytywny",
+      "text_sha256": "5fd83bab3a2ac7478675c541310cda4e08f132cca0fb63fc09fd5c09cf62c2e5",
+      "title_metadata": {
+        "title": "Home Room",
+        "original_title": "Home Room",
+        "year": "2002",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 195,
+      "excel_row": 197,
+      "initial_parquet_index": 20505,
+      "archive_file": "aclImdb/train/pos/7994_9.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0328107/usercomments",
+      "original_score": 9,
+      "id_imdb": "tt0328107",
+      "title_snapshot": "Man on Fire (2004)",
+      "sentiment": "pozytywny",
+      "text_sha256": "0442144e1f1d555d953413cae5969ad3dd6d37b8af78c29c199a31f9549bba3e",
+      "title_metadata": {
+        "title": "Man on Fire",
+        "original_title": "Man on Fire",
+        "year": "2004",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 196,
+      "excel_row": 198,
+      "initial_parquet_index": 9674,
+      "archive_file": "aclImdb/train/neg/9653_2.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0486615/usercomments",
+      "original_score": 2,
+      "id_imdb": "tt0486615",
+      "title_snapshot": "London Dreams (2009)",
+      "sentiment": "negatywny",
+      "text_sha256": "c13790bfc11e00ad36528b4947f44a944785124c92a7f6913dc39943f64d95f8",
+      "title_metadata": {
+        "title": "London Dreams",
+        "original_title": "London Dreams",
+        "year": "2009",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 197,
+      "excel_row": 199,
+      "initial_parquet_index": 4803,
+      "archive_file": "aclImdb/train/neg/4796_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0127503/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0127503",
+      "title_snapshot": "Death House (1988)",
+      "sentiment": "negatywny",
+      "text_sha256": "30985ff2c432298d0cc6774a5bc1f9988b4367594b39673d287ed5701e65d9c6",
+      "title_metadata": {
+        "title": "Death House",
+        "original_title": "Death House",
+        "year": "1988",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 198,
+      "excel_row": 200,
+      "initial_parquet_index": 7428,
+      "archive_file": "aclImdb/train/neg/7547_1.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0450345/usercomments",
+      "original_score": 1,
+      "id_imdb": "tt0450345",
+      "title_snapshot": "The Wicker Man (2006)",
+      "sentiment": "negatywny",
+      "text_sha256": "9b9613133038db6b2decf171f9fd53a230422fd742cc5624788c00835254f4df",
+      "title_metadata": {
+        "title": "The Wicker Man",
+        "original_title": "The Wicker Man",
+        "year": "2006",
+        "title_type": "movie"
+      }
+    },
+    {
+      "row_index": 199,
+      "excel_row": 201,
+      "initial_parquet_index": 10403,
+      "archive_file": "aclImdb/train/neg/10460_3.txt",
+      "original_review_url": "http://www.imdb.com/title/tt0203408/usercomments",
+      "original_score": 3,
+      "id_imdb": "tt0203408",
+      "title_snapshot": "The Omega Code (1999)",
+      "sentiment": "negatywny",
+      "text_sha256": "d070ab50ca5ff2f8f1b7d92765b20d1f20ffc8845546757e2a179343176a5721",
+      "title_metadata": {
+        "title": "The Omega Code",
+        "original_title": "The Omega Code",
+        "year": "1999",
+        "title_type": "movie"
+      }
+    }
+  ],
+  "movielens_source_indices": [
+    83810,
+    14592,
+    3278,
+    97196,
+    36048,
+    32098,
+    29256,
+    18289,
+    96530,
+    13434,
+    88696,
+    97080,
+    71482,
+    11395,
+    77397,
+    55302,
+    4165,
+    3905,
+    12280,
+    28657,
+    30495,
+    66237,
+    78907,
+    3478,
+    73563,
+    26062,
+    93850,
+    85181,
+    91924,
+    71426,
+    54987,
+    28893,
+    58878,
+    77236,
+    36463,
+    851,
+    99458,
+    20926,
+    91506,
+    55392,
+    44597,
+    36421,
+    20379,
+    28221,
+    44118,
+    13396,
+    12156,
+    49797,
+    12676,
+    47052,
+    45082,
+    79131,
+    34671,
+    5695,
+    95647,
+    60217,
+    70284,
+    16361,
+    49615,
+    10328,
+    72357,
+    38427,
+    82397,
+    81070,
+    47400,
+    75674,
+    25203,
+    92349,
+    9116,
+    6006,
+    86673,
+    29871,
+    37930,
+    10458,
+    30512,
+    13238,
+    49823,
+    36434,
+    59429,
+    83320,
+    47819,
+    21319,
+    48520,
+    46566,
+    27460,
+    87841,
+    34993,
+    91988,
+    89593,
+    84939,
+    9358,
+    79840,
+    83227,
+    22431,
+    70010,
+    95568,
+    32087,
+    21417,
+    60589,
+    49735,
+    35382,
+    83886,
+    90198,
+    73000,
+    28785,
+    89733,
+    42504,
+    7331,
+    30021,
+    4207,
+    41347,
+    52581,
+    35093,
+    8675,
+    27653,
+    74341,
+    94098,
+    41245,
+    27869,
+    85909,
+    65435,
+    51856,
+    84259,
+    60142,
+    18726,
+    34718,
+    18301,
+    32325,
+    97647,
+    73579,
+    70644,
+    34438,
+    97912,
+    76622,
+    56155,
+    76484,
+    52350,
+    47447,
+    28746,
+    18131,
+    66784,
+    64686,
+    11915,
+    99061,
+    6175,
+    14371,
+    20033,
+    82240,
+    20969,
+    89192,
+    55333,
+    78172,
+    8326,
+    50432,
+    50019,
+    78104,
+    61348,
+    69352,
+    32953,
+    72512,
+    1504,
+    89166,
+    94466,
+    15014,
+    89353,
+    70381,
+    98419,
+    34973,
+    84012,
+    44587,
+    14621,
+    38469,
+    56985,
+    20730,
+    59470,
+    425,
+    94646,
+    94329,
+    34522,
+    65612,
+    99871,
+    23416,
+    66542,
+    13947,
+    81959,
+    39117,
+    83748,
+    66540,
+    79818,
+    26071,
+    20032,
+    49009,
+    99943,
+    21174,
+    70697,
+    69514,
+    74,
+    78504,
+    42487,
+    64042
+  ],
+  "input_file_sha256": {
+    "IMDb_recenzje.xlsx": "8cabb6367e9925acebc70f5ff93d7918794ef6324833f68a138e64ace7b161a1",
+    "MovieLens_filmy.xlsx": "ac4064899559f347d6e14305dd06d8e87220a0cfb490f6a89774a1ac8f16f3a7",
+    "MovieLens_liczby.xlsx": "2c518244e9df1e48d4f96130f0914c6eedfdcf0d6188eabb37b6bde00663f4e4"
+  },
+  "canonical_rows_sha256": {
+    "IMDb_recenzje.xlsx": "1cec0a2628a24543facd123276f21777b087fab7b222993b728dc87f78dd9907",
+    "MovieLens_filmy.xlsx": "cb31cfdfe1a46966730947d28ba0c3d59418ef0b7d4b74e7eb5f0cb7eb074e8d",
+    "MovieLens_liczby.xlsx": "9105a42508be0fb77edbff71555f9e1d11e60d628146f9640800b5728662a1e7"
+  }
+}

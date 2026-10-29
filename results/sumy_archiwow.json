@@ -1,0 +1,6 @@
+{
+  "aclImdb_v1.tar.gz": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+  "ml-100k.zip": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229",
+  "imdb_train.parquet": "db47d16b5c297cc0dd625e519c81319c24c9149e70e8496de5475f6fa928342c",
+  "title.basics.tsv.gz": "bffa506d7d2c541087dbe3fc8405f69425af8f29cdacf8d44340c84877ba7f39"
+}
